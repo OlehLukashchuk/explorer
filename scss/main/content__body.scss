@@ -36,6 +36,15 @@
 
           .textInput {
             margin-top: 5px;
+            padding: 10px 5px;
+
+            .text-style {
+              height: 100%;
+              width: 2%;
+              background-color: #f2be87;
+              margin-right: 1px;
+              border-radius: 2px;
+            }
           }
 
           .radio__container {

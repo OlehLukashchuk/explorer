@@ -431,7 +431,14 @@ body {
         .content__body .body__main .form__container .body-form .form__element span {
           background-color: #f2be87; }
         .content__body .body__main .form__container .body-form .form__element .textInput {
-          margin-top: 5px; }
+          margin-top: 5px;
+          padding: 10px 5px; }
+          .content__body .body__main .form__container .body-form .form__element .textInput .text-style {
+            height: 100%;
+            width: 2%;
+            background-color: #f2be87;
+            margin-right: 1px;
+            border-radius: 2px; }
         .content__body .body__main .form__container .body-form .form__element .radio__container {
           width: 100%;
           height: calc(100% - 21px);
