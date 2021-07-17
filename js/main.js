@@ -1,8 +1,8 @@
 
         var _state = {
 
-          animation_status: "active",
-          // animation_status: "not_active",
+          // animation_status: "active",
+          animation_status: "not_active",
 
         };
 
