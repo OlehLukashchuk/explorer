@@ -6,7 +6,7 @@
     align-items: center;
 
     .header__text {
-      color: #787878;
+      background-color: #f2be87;
       font-size: 16px;
     }
 
@@ -28,21 +28,22 @@
         margin-bottom: 30px;
 
         .form__element {
-          flex-direction: column;
           width: 30%;
 
           span {
-            color: #787878;
+            background-color: #f2be87;
           }
 
-          input[type="text"] {
+          .textInput {
             margin-top: 5px;
           }
 
           .radio__container {
+            width: 100%;
             height: calc(100% - 21px);
             color: #787878;
             align-items: center;
+            margin-top: 5px;
 
             .radio__box {
               height: 100%;
@@ -56,6 +57,8 @@
               }
 
               label {
+                color: transparent;
+                background-color: #f2be87;
                 margin-left: 10px;
                 padding-top: 2px;
                 cursor: pointer;
@@ -66,16 +69,18 @@
       }
     }
   }
-  .body__footer{
+
+  .body__footer {
     justify-content: flex-end;
-    .btn-continue{
+
+    .btn-continue {
       width: 160px;
       height: 40px;
       padding: 0;
       border: 0;
-      background-color: #ed2828;
-      color: $white;
+      background-color: #f96f57;
       font-family: 'Roboto';
+      color: transparent;
     }
   }
 }

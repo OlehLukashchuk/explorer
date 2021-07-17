@@ -10,8 +10,12 @@
 
   &__title {
     justify-content: center;
-    color: $black;
-    font-size: 36px;
+
+    h1 {
+      background-color: #61798c;
+      font-size: 36px;
+
+    }
   }
 
   &__content {
@@ -21,9 +25,8 @@
 }
 
 .active {
-  background-color: #63a163;
-
-  .element__name {
-    color: $white !important;
+  background-color: #a2c1f2;
+  span{
+    background-color: #fffaff !important;
   }
 }

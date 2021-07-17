@@ -1,0 +1,19 @@
+.main {
+  width: 100%;
+  padding: 0px 96px;
+  margin: 100px 0; }
+  .main__container {
+    width: 1240px;
+    margin: 0 auto; }
+  .main__title {
+    justify-content: center; }
+    .main__title h1 {
+      background-color: #61798c;
+      font-size: 36px; }
+  .main__content {
+    margin: 40px 0; }
+
+.active {
+  background-color: #a2c1f2; }
+  .active span {
+    background-color: #fffaff !important; }

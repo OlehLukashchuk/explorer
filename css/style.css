@@ -329,7 +329,7 @@ textarea {
   box-sizing: border-box; }
 
 body {
-  color: white;
+  color: transparent;
   font-family: 'Roboto';
   overflow-x: hidden; }
 
@@ -343,18 +343,21 @@ body {
 .header {
   width: 100%;
   height: 100px;
-  background-color: #281f4d;
+  background-color: #307ff7;
   padding: 30px 96px;
   justify-content: space-between;
-  font-size: 20px; }
+  font-size: 15px; }
   .header__logo {
     align-items: center; }
+    .header__logo span {
+      background-color: #fffaff; }
   .header__nav {
     align-items: center; }
   .header__menu li {
     margin-right: 30px; }
     .header__menu li a {
-      color: white;
+      color: transparent;
+      background-color: #fffaff;
       text-decoration: none; }
 
 .main {
@@ -365,23 +368,23 @@ body {
     width: 1240px;
     margin: 0 auto; }
   .main__title {
-    justify-content: center;
-    color: black;
-    font-size: 36px; }
+    justify-content: center; }
+    .main__title h1 {
+      background-color: #61798c;
+      font-size: 36px; }
   .main__content {
     margin: 40px 0; }
 
 .active {
-  background-color: #63a163; }
-  .active .element__name {
-    color: white !important; }
+  background-color: #a2c1f2; }
+  .active span {
+    background-color: #fffaff !important; }
 
 .content__header {
   border: 1px solid #d2cfcf;
-  box-shadow: 0px 0px 1px 0px black;
   margin-bottom: 50px; }
   .content__header .header__element {
-    width: 30%;
+    width: calc(100% / 3);
     padding: 10px 15px;
     border-right: 1px solid #d2cfcf;
     justify-content: space-around;
@@ -398,10 +401,11 @@ body {
       color: black;
       font-size: 20px; }
     .content__header .header__element .element__name {
-      color: black;
       font-size: 20px;
       align-items: center;
       text-transform: uppercase; }
+      .content__header .header__element .element__name span {
+        background-color: #f2be87; }
 
 .content__body {
   padding: 25px;
@@ -409,7 +413,7 @@ body {
   .content__body .body__header {
     align-items: center; }
     .content__body .body__header .header__text {
-      color: #787878;
+      background-color: #f2be87;
       font-size: 16px; }
     .content__body .body__header .header__line {
       width: 85%;
@@ -423,16 +427,17 @@ body {
       justify-content: space-between;
       margin-bottom: 30px; }
       .content__body .body__main .form__container .body-form .form__element {
-        flex-direction: column;
         width: 30%; }
         .content__body .body__main .form__container .body-form .form__element span {
-          color: #787878; }
-        .content__body .body__main .form__container .body-form .form__element input[type="text"] {
+          background-color: #f2be87; }
+        .content__body .body__main .form__container .body-form .form__element .textInput {
           margin-top: 5px; }
         .content__body .body__main .form__container .body-form .form__element .radio__container {
+          width: 100%;
           height: calc(100% - 21px);
           color: #787878;
-          align-items: center; }
+          align-items: center;
+          margin-top: 5px; }
           .content__body .body__main .form__container .body-form .form__element .radio__container .radio__box {
             height: 100%;
             width: 50%;
@@ -442,6 +447,8 @@ body {
             .content__body .body__main .form__container .body-form .form__element .radio__container .radio__box input[type="radio"] {
               cursor: pointer; }
             .content__body .body__main .form__container .body-form .form__element .radio__container .radio__box label {
+              color: transparent;
+              background-color: #f2be87;
               margin-left: 10px;
               padding-top: 2px;
               cursor: pointer; }
@@ -452,12 +459,12 @@ body {
       height: 40px;
       padding: 0;
       border: 0;
-      background-color: #ed2828;
-      color: white;
-      font-family: 'Roboto'; }
+      background-color: #f96f57;
+      font-family: 'Roboto';
+      color: transparent; }
 
-input[type="text"] {
+.textInput {
   width: 100%;
   height: 40px;
   padding: 0 10px;
-  color: #9b9b9b; }
+  border: 1px solid #9b9b9b; }
