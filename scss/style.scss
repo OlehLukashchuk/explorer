@@ -1,0 +1,33 @@
+@import './base/mixin';
+@import './base/variables';
+@import './base/reset';
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $white;
+  font-family: 'Roboto';
+  overflow-x: hidden;
+}
+
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pageContainer{
+  width: 100vw;
+}
+
+@import './header/header.scss';
+@import './main/main.scss';
+@import './main/content__header.scss';
+@import './main/content__body.scss';
+@import './main/input.scss';

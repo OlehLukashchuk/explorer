@@ -1,0 +1,29 @@
+.main {
+  width: 100%;
+  padding: 0px 96px;
+  margin: 100px 0;
+
+  &__container {
+    width: 1240px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    justify-content: center;
+    color: $black;
+    font-size: 36px;
+  }
+
+  &__content {
+    margin: 40px 0;
+
+  }
+}
+
+.active {
+  background-color: #63a163;
+
+  .element__name {
+    color: $white !important;
+  }
+}
