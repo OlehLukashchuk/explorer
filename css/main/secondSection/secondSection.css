@@ -1,0 +1,10 @@
+.content__body2 {
+  @extends width: 65%;
+  margin: 0 auto; }
+  .content__body2 .secondSection > p {
+    display: inline-block;
+    background-color: #61798c;
+    font-size: 45px;
+    margin-bottom: 10px; }
+  .content__body2 .secondSection hr {
+    border: 1px solid #d2cfcf; }

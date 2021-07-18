@@ -248,7 +248,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-input[type="search"] {
+input[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   -moz-box-sizing: content-box;
@@ -407,28 +407,29 @@ body {
       .content__header .header__element .element__name span {
         background-color: #f2be87; }
 
-.content__body {
+.content__body1, .content__body2 {
   padding: 25px;
-  box-shadow: 0px 0px 3px 0px black; }
-  .content__body .body__header {
+  box-shadow: 0px 0px 3px 0px black;
+  display: block; }
+  .content__body1 .body__header, .content__body2 .body__header {
     align-items: center; }
-    .content__body .body__header .header__text {
+    .content__body1 .body__header .header__text, .content__body2 .body__header .header__text {
       background-color: #f2be87;
       font-size: 16px; }
-    .content__body .body__header .header__line {
+    .content__body1 .body__header .header__line, .content__body2 .body__header .header__line {
       width: 85%;
       height: 1px;
       border: 1px solid #d2cfcf; }
-  .content__body .body__main {
+  .content__body1 .body__main, .content__body2 .body__main {
     flex-direction: column;
     margin-top: 40px; }
-    .content__body .body__main .form__container .body-form {
+    .content__body1 .body__main .form__container .body-form, .content__body2 .body__main .form__container .body-form {
       width: 100%;
       justify-content: space-between;
       margin-bottom: 30px; }
-      .content__body .body__main .form__container .body-form .date {
+      .content__body1 .body__main .form__container .body-form .date, .content__body2 .body__main .form__container .body-form .date {
         position: relative; }
-        .content__body .body__main .form__container .body-form .date .date-block {
+        .content__body1 .body__main .form__container .body-form .date .date-block, .content__body2 .body__main .form__container .body-form .date .date-block {
           position: absolute;
           width: 275px;
           min-height: 160px;
@@ -438,70 +439,64 @@ body {
           right: -253px;
           background: white;
           display: none; }
-          .content__body .body__main .form__container .body-form .date .date-block__header {
+          .content__body1 .body__main .form__container .body-form .date .date-block__header, .content__body2 .body__main .form__container .body-form .date .date-block__header {
             width: 100%;
             height: 40px;
             background-color: #032a7c; }
-            .content__body .body__main .form__container .body-form .date .date-block__header div {
+            .content__body1 .body__main .form__container .body-form .date .date-block__header div, .content__body2 .body__main .form__container .body-form .date .date-block__header div {
               height: 100%; }
-            .content__body .body__main .form__container .body-form .date .date-block__header div:first-child {
+            .content__body1 .body__main .form__container .body-form .date .date-block__header div:first-child, .content__body2 .body__main .form__container .body-form .date .date-block__header div:first-child {
               width: 80%;
               border-right: 1px solid #183d8e; }
-          .content__body .body__main .form__container .body-form .date .date-block__body {
+          .content__body1 .body__main .form__container .body-form .date .date-block__body, .content__body2 .body__main .form__container .body-form .date .date-block__body {
             height: calc(100% - 40px);
             padding: 10px; }
-            .content__body .body__main .form__container .body-form .date .date-block__body div {
+            .content__body1 .body__main .form__container .body-form .date .date-block__body div, .content__body2 .body__main .form__container .body-form .date .date-block__body div {
               height: 30px;
               width: 30px;
               border: 1px solid #e1dfe1;
               border-radius: 5px;
               margin: 3px; }
-            .content__body .body__main .form__container .body-form .date .date-block__body .chosen-date {
+            .content__body1 .body__main .form__container .body-form .date .date-block__body .chosen-date, .content__body2 .body__main .form__container .body-form .date .date-block__body .chosen-date {
               background-color: #97bcf6; }
-      .content__body .body__main .form__container .body-form .form__element {
+      .content__body1 .body__main .form__container .body-form .form__element, .content__body2 .body__main .form__container .body-form .form__element {
         width: 30%; }
-        .content__body .body__main .form__container .body-form .form__element span {
+        .content__body1 .body__main .form__container .body-form .form__element span, .content__body2 .body__main .form__container .body-form .form__element span {
           background-color: #f2be87; }
-        .content__body .body__main .form__container .body-form .form__element .textInput {
+        .content__body1 .body__main .form__container .body-form .form__element .textInput, .content__body2 .body__main .form__container .body-form .form__element .textInput, .content__body1 .body__main .form__container .body-form .form__element .secondSection__account .account-right .account-form .account-elementContainer .account-input, .secondSection__account .account-right .account-form .account-elementContainer .content__body1 .body__main .form__container .body-form .form__element .account-input, .content__body2 .body__main .form__container .body-form .form__element .secondSection__account .account-right .account-form .account-elementContainer .account-input, .secondSection__account .account-right .account-form .account-elementContainer .content__body2 .body__main .form__container .body-form .form__element .account-input {
           margin-top: 5px;
           padding: 10px; }
-          .content__body .body__main .form__container .body-form .form__element .textInput .date-littleBlock {
+          .content__body1 .body__main .form__container .body-form .form__element .textInput .date-littleBlock, .content__body2 .body__main .form__container .body-form .form__element .textInput .date-littleBlock, .content__body1 .body__main .form__container .body-form .form__element .secondSection__account .account-right .account-form .account-elementContainer .account-input .date-littleBlock, .secondSection__account .account-right .account-form .account-elementContainer .content__body1 .body__main .form__container .body-form .form__element .account-input .date-littleBlock, .content__body2 .body__main .form__container .body-form .form__element .secondSection__account .account-right .account-form .account-elementContainer .account-input .date-littleBlock, .secondSection__account .account-right .account-form .account-elementContainer .content__body2 .body__main .form__container .body-form .form__element .account-input .date-littleBlock {
             width: 20px;
             height: 20px;
             background-color: none; }
-          .content__body .body__main .form__container .body-form .form__element .textInput .text-style {
-            height: 100%;
-            width: 2%;
-            background-color: #f2be87;
-            margin-right: 1px;
-            border-radius: 2px; }
-          .content__body .body__main .form__container .body-form .form__element .textInput .material-date {
+          .content__body1 .body__main .form__container .body-form .form__element .textInput .material-date, .content__body2 .body__main .form__container .body-form .form__element .textInput .material-date, .content__body1 .body__main .form__container .body-form .form__element .secondSection__account .account-right .account-form .account-elementContainer .account-input .material-date, .secondSection__account .account-right .account-form .account-elementContainer .content__body1 .body__main .form__container .body-form .form__element .account-input .material-date, .content__body2 .body__main .form__container .body-form .form__element .secondSection__account .account-right .account-form .account-elementContainer .account-input .material-date, .secondSection__account .account-right .account-form .account-elementContainer .content__body2 .body__main .form__container .body-form .form__element .account-input .material-date {
             color: #052a7b; }
-        .content__body .body__main .form__container .body-form .form__element .date-input {
+        .content__body1 .body__main .form__container .body-form .form__element .date-input, .content__body2 .body__main .form__container .body-form .form__element .date-input {
           justify-content: flex-end; }
-        .content__body .body__main .form__container .body-form .form__element .radio__container {
+        .content__body1 .body__main .form__container .body-form .form__element .radio__container, .content__body2 .body__main .form__container .body-form .form__element .radio__container {
           width: 100%;
           height: calc(100% - 21px);
           color: #787878;
           align-items: center;
           margin-top: 5px; }
-          .content__body .body__main .form__container .body-form .form__element .radio__container .radio__box {
+          .content__body1 .body__main .form__container .body-form .form__element .radio__container .radio__box, .content__body2 .body__main .form__container .body-form .form__element .radio__container .radio__box {
             height: 100%;
             width: 50%;
             align-items: center;
             border: 1px solid #d2cfcf;
             padding: 0 10px; }
-            .content__body .body__main .form__container .body-form .form__element .radio__container .radio__box input[type="radio"] {
+            .content__body1 .body__main .form__container .body-form .form__element .radio__container .radio__box input[type="radio"], .content__body2 .body__main .form__container .body-form .form__element .radio__container .radio__box input[type="radio"] {
               cursor: pointer; }
-            .content__body .body__main .form__container .body-form .form__element .radio__container .radio__box label {
+            .content__body1 .body__main .form__container .body-form .form__element .radio__container .radio__box label, .content__body2 .body__main .form__container .body-form .form__element .radio__container .radio__box label {
               color: transparent;
               background-color: #f2be87;
               margin-left: 10px;
               padding-top: 2px;
               cursor: pointer; }
-  .content__body .body__footer {
+  .content__body1 .body__footer, .content__body2 .body__footer {
     justify-content: flex-end; }
-    .content__body .body__footer .btn-continue {
+    .content__body1 .body__footer .btn-continue, .content__body2 .body__footer .btn-continue {
       width: 160px;
       height: 40px;
       padding: 0;
@@ -510,8 +505,50 @@ body {
       font-family: 'Roboto';
       color: transparent; }
 
-.textInput {
+.textInput, .secondSection__account .account-right .account-form .account-elementContainer .account-input {
   width: 100%;
   height: 40px;
   padding: 0 10px;
   border: 1px solid #9b9b9b; }
+
+.text-style {
+  height: 100%;
+  width: 2%;
+  background-color: #f2be87;
+  margin-right: 1px;
+  border-radius: 2px; }
+
+.content__body2 {
+  width: 55%;
+  display: block;
+  margin: 0 auto; }
+  .content__body2 .secondSection > p {
+    display: inline-block;
+    background-color: #61798c;
+    font-size: 45px;
+    margin-bottom: 10px; }
+  .content__body2 .secondSection hr {
+    border: 1px solid #d2cfcf; }
+
+.secondSection__account {
+  margin-top: 20px; }
+  .secondSection__account .account-left {
+    width: 30%; }
+    .secondSection__account .account-left p {
+      display: inline-block;
+      background-color: #f2be87; }
+  .secondSection__account .account-right {
+    width: 70%; }
+    .secondSection__account .account-right .account-form {
+      flex-direction: column; }
+      .secondSection__account .account-right .account-form .account-elementContainer {
+        margin-bottom: 10px; }
+        .secondSection__account .account-right .account-form .account-elementContainer p {
+          background-color: #f2be87;
+          display: inline-block; }
+        .secondSection__account .account-right .account-form .account-elementContainer .account-input {
+          width: 45%;
+          padding: 10px;
+          margin-top: 10px; }
+      .secondSection__account .account-right .account-form .account-elementContainer:not(:last-child) .account-input {
+        width: 85%; }
