@@ -1,19 +1,19 @@
-.content__body2 {
-  @extend .content__body1;
-  width: 55%;
-  display: block;
-  margin: 0 auto;
+// .content__body2 {
+//   @extend .content__body1;
+//   width: 55%;
+//   display: block;
+//   margin: 0 auto;
 
-  .secondSection {
-    >p {
-      display: inline-block;
-      background-color: #61798c;
-      font-size: 45px;
-      margin-bottom: 10px;
-    }
+//   .secondSection {
+//     >p {
+//       display: inline-block;
+//       background-color: #61798c;
+//       font-size: 45px;
+//       margin-bottom: 10px;
+//     }
 
-    hr {
-      border: 1px solid #d2cfcf;
-    }
-  }
-}
+//     hr {
+//       border: 1px solid #d2cfcf;
+//     }
+//   }
+// }
