@@ -1,10 +1,15 @@
 
-        var _state = {};
+        var _state = {
+
+          // animation_status: "active",
+          animation_status: "not_active",
+
+        };
 
         _state.operation_state = {};
         _state.model = {
 
-          
+
 
         };
 
@@ -13,25 +18,28 @@
           [ "mouse_go_to", 0, 0 ],
           [ "wait", 200 ],
           [ "mouse_go_to", 500, 500 ],
+          // [ "wait", 500 ],
+          // [ "text_input_add_letter" ],
+          // [ "wait", 500 ],
+          // [ "text_input_add_letter" ],
+          // [ "wait", 500 ],
+          // [ "text_input_add_letter" ],
+          // [ "wait", 500 ],
+          // [ "text_input_add_letter" ],
+          // [ "wait", 500 ],
+          // [ "text_input_add_letter" ],
+          // [ "wait", 500 ],
+          // [ "text_input_add_letter" ],
+          // [ "wait", 500 ],
+          // [ "text_input_add_letter" ],
+          // [ "wait", 500 ],
+          // [ "text_input_add_letter" ],
+          // [ "wait", 500 ],
+          // [ "mouse_go_to", 500, 600 ],
+          [ "wait", 700 ],
+          [ "mouse_go_to", 1690, 350 ],
           [ "wait", 500 ],
-          [ "text_input_add_letter" ],
-          [ "wait", 500 ],
-          [ "text_input_add_letter" ],
-          [ "wait", 500 ],
-          [ "text_input_add_letter" ],
-          [ "wait", 500 ],
-          [ "text_input_add_letter" ],
-          [ "wait", 500 ],
-          [ "text_input_add_letter" ],
-          [ "wait", 500 ],
-          [ "text_input_add_letter" ],
-          [ "wait", 500 ],
-          [ "text_input_add_letter" ],
-          [ "wait", 500 ],
-          [ "text_input_add_letter" ],
-          [ "wait", 500 ],
-          [ "mouse_go_to", 500, 600 ],
-          [ "wait", 500 ],
+          [ "add_class", "#chromane_iframe_container", "active" ]
 
         ];
 
@@ -62,6 +70,12 @@
 
           },
 
+          add_class: ( op_data, op_state ) => {
+
+            document.querySelector( op_data[ 1 ] ).classList.add( op_data[ 2 ] );
+
+          },
+
         };
 
         async function exec_operations ( op_data_arr ) {
@@ -76,7 +90,11 @@
 
         }
 
-        exec_operations( _state.animation_script );
+        if ( _state.animation_status === "active" ) {
+
+          exec_operations( _state.animation_script );
+
+        };
 
         // new Vue({
 
