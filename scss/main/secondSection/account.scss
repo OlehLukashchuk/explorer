@@ -1,42 +1,42 @@
-.secondSection__account {
-  margin-top: 20px;
+// .secondSection__account {
+//   margin-top: 20px;
 
-  .account-left {
-    width: 30%;
+//   .account-left {
+//     width: 30%;
 
-    p {
-      display: inline-block;
-      background-color: #f2be87;
-    }
-  }
+//     p {
+//       display: inline-block;
+//       background-color: #f2be87;
+//     }
+//   }
 
-  .account-right {
-    width: 70%;
+//   .account-right {
+//     width: 70%;
 
-    .account-form {
-      flex-direction: column;
+//     .account-form {
+//       flex-direction: column;
 
-      .account-elementContainer {
-        margin-bottom: 10px;
+//       .account-elementContainer {
+//         margin-bottom: 10px;
 
-        p {
-          background-color: #f2be87;
-          display: inline-block;
-        }
+//         p {
+//           background-color: #f2be87;
+//           display: inline-block;
+//         }
 
-        .account-input {
-          @extend .textInput;
-          width: 45%;
-          padding: 10px;
-          margin-top: 10px;
-        }
-      }
+//         .account-input {
+//           @extend .textInput;
+//           width: 45%;
+//           padding: 10px;
+//           margin-top: 10px;
+//         }
+//       }
 
-      .account-elementContainer:not(:last-child) {
-        .account-input {
-          width: 85%;
-        }
-      }
-    }
-  }
-}
+//       .account-elementContainer:not(:last-child) {
+//         .account-input {
+//           width: 85%;
+//         }
+//       }
+//     }
+//   }
+// }
