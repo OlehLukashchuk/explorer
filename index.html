@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div>d id = "desktop" ></div>
+    <div id = "desktop" >
  
       <div id = "browser" >
 
@@ -83,7 +83,7 @@
 
         <div id = "browser-main" >
 
-          <div class = "browser-page" >
+          <div class = "browser-page" v-if = "model.active_page_name === 'shop'" >
 
             <div class="pageContainer">
               <header class="header flex-box">
@@ -478,8 +478,81 @@
                 </div>
   
               </div>
-            </div>
+          </div>
 
+          <div class = "browser-page" v-if = "model.active_page_name === 'database'" >
+
+            <div class="pageContainer table-page">
+              <div class="table-page__container">
+                <header class="table-page__header flex-box">
+                  <div class="header__logo flex-box">
+                    <i class="material-icons">explore</i>
+                  </div>
+                  <div class="header__search flex-box">
+                    <i class="material-icons">search</i>
+                    <p>Search</p>
+                  </div>
+                </header>
+                <aside class="table-page__aside">
+                  <nav class="aside__nav">
+                    <ul class="flex-box">
+                      <li><i class="material-icons">house</i></li>
+                      <li><i class="material-icons">local_grocery_store_outlined_icon</i></li>
+                      <li><i class="material-icons">keyboard</i></li>
+                      <li><i class="material-icons">person</i></li>
+                      <li><i class="material-icons">trending_up</i></li>
+                      <li><i class="material-icons">notifications_active_icon</i></li>
+                    </ul>
+                  </nav>
+                </aside>
+                <main class="table-page__main"></main>
+              </div>
+         
+              <div id = "chromane_iframe_container" class = "not-active" >
+  
+                <div id = "chromane_iframe_toggle_button" >
+  
+                  <svg class = "chromane_chevron_left" style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="white" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
+                  </svg>
+  
+                  <svg class = "chromane_chevron_right" style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="white" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                  </svg>
+  
+                </div>
+  
+                <div id = "chromane_iframe" >
+                  <div id = "header" >
+  
+                    <div class="icon menu" style="margin-left: 17px" v-on:click="handle_event( 'menu_button_click' )">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                      </svg>
+                    </div>
+  
+                    <div style="flex-grow: 1"></div>
+  
+                    <span>Horse Betting</span>
+  
+                    <div style="flex-grow: 1"></div>
+  
+                    <div class="icon close" style="margin-right: 15px; margin-left: 2px;" v-on:click="handle_event( 'close_button_click' )">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                      </svg>
+                    </div>
+  
+                    <div id = "dropshadow" ></div>
+  
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+  
+          </div>
+  
           </div>
 
         </div>
@@ -488,6 +561,8 @@
 
     </div>
 
+  </div>
+  
       <div class = "mouse_container">
         <img src= "img/mouse-pointer.svg">
       </div>
