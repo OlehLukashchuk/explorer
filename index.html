@@ -132,302 +132,253 @@
                       </div>
                     </div>
                     <!--content__header-->
-                    <div class="content__container1" style="display:none">
-                      <div class="content__body">
-                        <div class="body__header flex-box">
-                          <div class="header__text">
-                            <span>Datos personales</span>
-                          </div>
-                          <hr class="header__line"></hr>
-                        </div>
-                        <!--body__header-->
-                        <div class="body__main flex-box">
-                            <div class="form__container">
-                              <form action="/" class="body-form flex-box">
-                                <div class="form__element flex-box">
-                                  <span>Nombre</span>
-                                  <div class="textInput flex-box">
-                                    <div class="text-style"></div>
-                                    <div class="text-style"></div>
-                                    <div class="text-style"></div>
-                                    <div class="text-style"></div>
-                                    <div class="text-style"></div>
-                                  </div>
-                                </div>
-                                <div class="form__element flex-box">
-                                  <span>Primer apeilido</span>
-                                  <div class="textInput"></div>
-                                </div>
-                                <div class="form__element flex-box">
-                                  <span>Segundo apellido</span>
-                                  <div class="textInput"></div>
-                                </div>
-                              </form>
+                    <div class="sections-container flex-box" v-bind:style = "model.shop_model.section_style">
+                      <div class="content__container content__container1" >
+                        <div class="content__body">
+                          <div class="body__header flex-box">
+                            <div class="header__text">
+                              <span>Datos personales</span>
                             </div>
-                            <div class="form__container">
-                              <form action="/" class="body-form flex-box">
-                                <div class="form__element flex-box">
-                                  <span>DNI/NIE</span>
-                                  <div class="textInput"></div>
-                                </div>
-                                <div class="form__element flex-box date">
-                                  <span>Fecha de nacimiento</span>
-                                  <div class="textInput flex-box date-input">
-                                  <i class="material-icons material-date">event</i>
-                                  </div>
-                                  <div class="date-block">
-                                    <div class="date-block__header">
-                                      <div></div>
-                                      <div></div>
-                                    </div>
-                                    <div class="date-block__body flex-box">
-                                      <div></div>
-                                      <div></div>
-                                      <div></div>
-                                      <div></div>
-                                      <div></div>
-                                      <div class="chosen-date"></div>
-                                      <div></div>
-                                      <div></div>
-                                      <div class="chosen-date"></div>
-                                      <div></div>
-                                      <div></div>
-                                      <div></div>
-                                      <div></div>
-                                      <div></div>
-                                      <div></div>
-                                      <div></div>
-                                      <div></div>
-                                      <div></div>
-                                      <div class="chosen-date"></div>
-                                      <div></div>
-                                      <div></div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="form__element flex-box">
-                                  <span>Genero</span>
-                                  <div class="radio__container flex-box">
-                                    <div class="radio__box flex-box">
-                                      <input name="gender" type="radio" id="radio-male">
-                                      <label for="radio-male">Mujer</label>
-                                    </div>
-                                    <div class="radio__box flex-box">
-                                      <input name="gender" type="radio" id="radio-female">
-                                      <label for="radio-female">Hombre</label>
-                                    </div>
-                                  </div>
-                                </div>
-                              </form>
-                            </div>
-                            <div class="form__container">
-                              <form action="/" class="body-form flex-box">
-                                <div class="form__element flex-box">
-                                  <span>Correo electorico</span>
-                                  <div class="textInput"></div>
-                                </div>
-                                <div class="form__element flex-box">
-                                  <span>Telefono movil</span>
-                                  <div class="textInput"></div>
-                                </div>
-                                <div class="form__element flex-box">
-                                  <span>Telefono fijo</span>
-                                  <div class="textInput"></div>
-                                </div>
-                              </form>
-                            </div>
-                        </div>
-                        <!--body__main-->
-                        <div class="body__footer flex-box">
-                          <button class="btn-continue">Continuar</button>
-                        </div>
-                      </div>
-                    <!--content__body-->
-                    </div>
-                    <!--content__container1-->
-                    <div class="content__container2 flex-box">
-                      <div class="container2-slider flex-box">
-                        <button class="arrowLeft">
-                          <i class="material-icons">arrow_back</i>
-                        </button>
-                        <div class="slider-elementsContainer flex-box">
-                          <div class="slider-element flex-box">
-                            <picture>
-                              <img src="/img/toy-train.png" alt="">
-                            </picture>
-                            <div class="button-buy flex-box"><i class="material-icons">attach_money</i></div>
+                            <hr class="header__line"></hr>
                           </div>
-                          <div class="slider-element flex-box">
-                            <picture>
-                              <img src="/img/toy-train.png" alt="">
-                            </picture>
-                            <div class="button-buy flex-box"><i class="material-icons">attach_money</i></div>
-                          </div>
-                          <div class="slider-element flex-box">
-                            <picture>
-                              <img src="/img/toy-train.png" alt="">
-                            </picture>
-                            <div class="button-buy flex-box"><i class="material-icons">attach_money</i></div>
-                          </div>
-                        </div>
-                        <button class="arrowRight">
-                          <i class="material-icons">arrow_forward</i>
-                        </button>
-                      </div>
-                      <div class="container2-selectProduct flex-box">
-                        <!-- <div class="select-search textInput"><span>Search</span></div>
-                        <select size = 5>
-                          <option value="">One</option>
-                          <option value="">Two</option>
-                          <option value="">Three</option>
-                          <option value="">Four</option>
-                          <option value="">Five</option>
-                          <option value="">Six</option>
-                          <option value="">Seven</option>
-                          <option value="">Eight</option>
-                          <option value="">Nine</option>
-                          <option value="">Ten</option>
-                      </select> -->
-                      <div class="price-container flex-box">
-                        <div class="setPrice">
-                          <p>31232</p>
-                        </div>
-                        <span> — </span>
-                        <div class="setPrice">
-                          <p>31232</p>
-                        </div>
-                        <div class="price-check">
-                          <div class="price-check__leftCircle price-circle"></div>
-                          <div class="price-check__rightCircle price-circle"></div>
-                        </div>
-                      </div>
-                      <div class="price-container flex-box">
-                        <div class="setPrice">
-                          <p>31232</p>
-                        </div>
-                        <span> — </span>
-                        <div class="setPrice">
-                          <p>31232</p>
-                        </div>
-                        <div class="price-check">
-                          <div class="price-check__leftCircle price-circle"></div>
-                          <div class="price-check__rightCircle price-circle"></div>
-                        </div>
-                      </div>
-                      <div class="price-container flex-box">
-                        <div class="setPrice">
-                          <p>31232</p>
-                        </div>
-                        <span> — </span>
-                        <div class="setPrice">
-                          <p>31232</p>
-                        </div>
-                        <div class="price-check">
-                          <div class="price-check__leftCircle price-circle"></div>
-                          <div class="price-check__rightCircle price-circle"></div>
-                        </div>
-                      </div>
-                      </div>
-                      <!--container2__selectProduct-->
-                      <div class="container2__selectFile">
-                        <input type="file" id="file">
-                        <label for="file">Select file</label>
-                        <input type="file" id="file">
-                        <label for="file">Select file</label>
-                      </div>
-                    </div>
-                    <div class="content__container3" style="display:none">
-                      <div class="container3__header flex-box">
-                        <div class="header-left flex-box">
-                          <div class="img-container flex-box">
-                            <picture>
-                              <img src="/img/visa-logo-png-transparent.png">
-                            </picture>
-                            <picture>
-                              <img src="/img/Mastercard-logo.png">
-                            </picture>
-                          </div>
-                          <div class="text-container flex-box">
-                            <input type="radio" id="visa-pay">
-                            <label for="visa-pay">Pay 340.00$ with credit card</label>
-                          </div>
-                        </div>
-                        <div class="header-right">
-                          <div class="img-container flex-box">
-                            <picture>
-                              <img src="/img/PayPal.svg.png">
-                            </picture>
+                          <!--body__header-->
+                          <div class="body__main flex-box">
+                              <div class="form__container">
+                                <form action="/" class="body-form flex-box">
 
+                                  <div v-for = "item in model.shop_model.form_item_arr" >
+
+
+                                        <div v-if = "item.type ==='text'" class="form__element flex-box date">
+                                     
+                                           <span>Correo electorico</span>
+                                        
+                                          <div class="textInput flex-box">
+                                            <div class="text-style"></div>
+                                            <div class="text-style"></div>
+                                            <div class="text-style"></div>
+                                            <div class="text-style"></div>
+                                            <div class="text-style"></div>
+                                          </div>
+
+                                        </div>
+
+                                        <div v-if = "item.type ==='date'" class="form__element flex-box date">
+                                          <span>Fecha de nacimiento</span>
+                                          <div class="textInput flex-box date-input">
+                                          <i class="material-icons material-date">event</i>
+                                          </div>
+                                          <div class="date-block">
+                                            <div class="date-block__header">
+                                              <div></div>
+                                              <div></div>
+                                            </div>
+                                            <div class="date-block__body flex-box">
+                                              <div></div>
+                                              <div></div>
+                                              <div></div>
+                                              <div></div>
+                                              <div></div>
+                                              <div class="chosen-date"></div>
+                                              <div></div>
+                                              <div></div>
+                                              <div class="chosen-date"></div>
+                                              <div></div>
+                                              <div></div>
+                                              <div></div>
+                                              <div></div>
+                                              <div></div>
+                                              <div></div>
+                                              <div></div>
+                                              <div></div>
+                                              <div></div>
+                                              <div class="chosen-date"></div>
+                                              <div></div>
+                                              <div></div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+
+                                        <div class="form__element flex-box" v-if = "item.type ==='toggle'" >
+
+
+                                          <div class="form__element flex-box">
+                                            <span>Genero</span>
+                                            <div class="radio__container flex-box">
+                                              <div class="radio__box flex-box">
+                                                <input name="gender" type="radio" id="radio-male">
+                                                <label for="radio-male">Mujer</label>
+                                              </div>
+                                              <div class="radio__box flex-box">
+                                                <input name="gender" type="radio" id="radio-female">
+                                                <label for="radio-female">Hombre</label>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </form>
+                              </div>
                           </div>
-                          <div class="text-container flex-box">
-                            <input type="radio" id="visa-pay">
-                            <label for="visa-pay">Pay 340.00$ with credit card</label>
+                          <!--body__main-->
+                          <div class="body__footer flex-box">
+                            <button class="btn-continue">Continuar</button>
                           </div>
                         </div>
+                      <!--content__body-->
+                      </div>
+                      <!--content__container1-->
+                      <div class="content__container content__container2 flex-box">
+                        <div class="container2-slider flex-box">
+                          <button class="arrowLeft">
+                            <i class="material-icons">arrow_back</i>
+                          </button>
+                          <div class="slider-elementsContainer flex-box">
+                            <div class="slider-element flex-box">
+                              <picture>
+                                <img src="/img/toy-train.png" alt="">
+                              </picture>
+                              <div class="button-buy flex-box"><i class="material-icons">attach_money</i></div>
+                            </div>
+                            <div class="slider-element flex-box">
+                              <picture>
+                                <img src="/img/toy-train.png" alt="">
+                              </picture>
+                              <div class="button-buy flex-box"><i class="material-icons">attach_money</i></div>
+                            </div>
+                            <div class="slider-element flex-box">
+                              <picture>
+                                <img src="/img/toy-train.png" alt="">
+                              </picture>
+                              <div class="button-buy flex-box"><i class="material-icons">attach_money</i></div>
+                            </div>
+                          </div>
+                          <button class="arrowRight">
+                            <i class="material-icons">arrow_forward</i>
+                          </button>
                         </div>
-                      <!--container3__header-->
-                      <div class="container3__main">
-                        <form action="/" class="container3-form flex-box">
-                          <div class="container3-form__element">
-                            <p>Cardholder's Name</p>
-                            <div class="textInput">
-                              <i class="material-icons">person</i>
-                            </div>
-                          </div>
-                          <div class="container3-form__element">
-                            <p>Card Name</p>
-                            <div class="textInput flex-box">
-                              <i class="material-icons">payment</i>
-                            </div>
-                          </div>
-                          <div class="container3-form__element">
-                            <p>Valid thru</p>
-                            <div class="textInput flex-box date-element">
-                              <i class="material-icons material-date">event</i>
-                            </div>
-                            <div class="date-block">
-                              <div class="date-block__header">
-                                <div></div>
-                                <div></div>
+                        <div class="container2-selectProduct flex-box">
+                          <div class="price-container flex-box" v-for="item in model.shop_model.price_selector_arr">
+                              <div class="setPrice">
+                                <p>31232</p>
                               </div>
-                              <div class="date-block__body flex-box">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div class="chosen-date"></div>
-                                <div></div>
-                                <div></div>
-                                <div class="chosen-date"></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div class="chosen-date"></div>
-                                <div></div>
-                                <div></div>
+                              <span> — </span>
+                              <div class="setPrice">
+                                <p>31232</p>
+                              </div>
+                              <div class="price-check">
+                                <div class="price-check__leftCircle price-circle"></div>
+                                <div class="price-check__rightCircle price-circle"></div>
+                              </div>
+                          </div>
+                    
+                        </div>
+                        <!--container2__selectProduct-->
+                        <div class="container2__selectFile">
+                          <input type="file" id="file">
+                          <label for="file" >Select file</label>
+                          <input type="file" id="file">
+                          <label for="file">Select file</label>
+                        </div>
+                      </div>
+                      <div class="content__container content__container3" >
+                        <div class="container3__header flex-box">
+                          <div class="header-left flex-box">
+                            <div class="img-container flex-box">
+                              <picture>
+                                <img src="/img/visa-logo-png-transparent.png">
+                              </picture>
+                              <picture>
+                                <img src="/img/Mastercard-logo.png">
+                              </picture>
+                            </div>
+                            <div class="text-container flex-box">
+                              <input type="radio" id="visa-pay">
+                              <label for="visa-pay">Pay 340.00$ with credit card</label>
+                            </div>
+                          </div>
+                          <div class="header-right">
+                            <div class="img-container flex-box">
+                              <picture>
+                                <img src="/img/PayPal.svg.png">
+                              </picture>
+  
+                            </div>
+                            <div class="text-container flex-box">
+                              <input type="radio" id="visa-pay">
+                              <label for="visa-pay">Pay 340.00$ with credit card</label>
+                            </div>
+                          </div>
+                          </div>
+                        <!--container3__header-->
+                        <div class="container3__main">
+                          <form action="/" class="container3-form flex-box">
+                            <div class="container3-form__element">
+                              <p>Cardholder's Name</p>
+                              <div class="textInput">
+                                <i class="material-icons">person</i>
                               </div>
                             </div>
-                          </div>
-                          <div class="container3-form__element">
-                            <p>CVV / CVC *</p>
-                            <div class="textInput">
-                              <i class="material-icons">lock</i>
+                            <div class="container3-form__element">
+                              <p>Card Name</p>
+                              <div class="textInput flex-box">
+                                <i class="material-icons">payment</i>
+                              </div>
                             </div>
-                          </div>
-                          <div class="container3-form__element">
-        
-                          </div>
-                        </form>
-                      </div>
-                      </div>
-                      <!--container3__main-->
+                            <div class="container3-form__element">
+                              <p>Valid thru</p>
+                              <div class="textInput flex-box date-element">
+                                <i class="material-icons material-date">event</i>
+                              </div>
+                              <div class="date-block">
+                                <div class="date-block__header">
+                                  <div></div>
+                                  <div></div>
+                                </div>
+                                <div class="date-block__body flex-box">
+                                  <div></div>
+                                  <div></div>
+                                  <div></div>
+                                  <div></div>
+                                  <div></div>
+                                  <div class="chosen-date"></div>
+                                  <div></div>
+                                  <div></div>
+                                  <div class="chosen-date"></div>
+                                  <div></div>
+                                  <div></div>
+                                  <div></div>
+                                  <div></div>
+                                  <div></div>
+                                  <div></div>
+                                  <div></div>
+                                  <div></div>
+                                  <div></div>
+                                  <div class="chosen-date"></div>
+                                  <div></div>
+                                  <div></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="container3-form__element">
+                              <p>CVV / CVC *</p>
+                              <div class="textInput">
+                                <i class="material-icons">lock</i>
+                              </div>
+                            </div>
+                            <div class="container3-form__element">
+          
+                            </div>
+                          </form>
+                        </div>
+                        </div>
+                        <!--container3__main-->
+                    </div>
+            
                     </div>
                     <!--content__container3-->
                   </div>

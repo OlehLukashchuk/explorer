@@ -3,7 +3,7 @@
   margin: 35px 0 0;
 
   &__container {
-    width: 1240px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -13,21 +13,29 @@
     h1 {
       background-color: #61798c;
       font-size: 36px;
-      display:none;
-
+      display: none;
     }
   }
 
   &__content {
     margin: 40px 0;
 
-  
+    .sections-container {
+      flex-wrap: nowrap;
+      position: relative;
+      left: 0;
+      transition: all 0.2s ease;
+      .content__container {
+        width: 100%;
+        padding: 40px;
+      }
+    }
   }
 }
 
 .active {
   background-color: #a2c1f2;
-  span{
+  span {
     background-color: #fffaff !important;
   }
 }

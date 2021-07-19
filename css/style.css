@@ -602,7 +602,7 @@ html, body, #root {
   width: 100%;
   margin: 35px 0 0; }
   .main__container {
-    width: 1240px;
+    width: 100%;
     margin: 0 auto; }
   .main__title {
     justify-content: center; }
@@ -612,6 +612,14 @@ html, body, #root {
       display: none; }
   .main__content {
     margin: 40px 0; }
+    .main__content .sections-container {
+      flex-wrap: nowrap;
+      position: relative;
+      left: 0;
+      transition: all 0.2s ease; }
+      .main__content .sections-container .content__container {
+        width: 100%;
+        padding: 40px; }
 
 .active {
   background-color: #a2c1f2; }
@@ -619,8 +627,7 @@ html, body, #root {
     background-color: #fffaff !important; }
 
 .content__header {
-  border: 1px solid #d2cfcf;
-  margin-bottom: 50px; }
+  border: 1px solid #d2cfcf; }
   .content__header .header__element {
     width: calc(100% / 3);
     padding: 10px 15px;
@@ -665,43 +672,45 @@ html, body, #root {
       width: 100%;
       justify-content: space-between;
       margin-bottom: 30px; }
-      .content__body .body__main .form__container .body-form .date {
-        position: relative; }
-      .content__body .body__main .form__container .body-form .form__element {
+      .content__body .body__main .form__container .body-form > div {
         width: 30%; }
-        .content__body .body__main .form__container .body-form .form__element span {
-          background-color: #f2be87; }
-        .content__body .body__main .form__container .body-form .form__element .textInput {
-          margin-top: 5px;
-          padding: 10px; }
-          .content__body .body__main .form__container .body-form .form__element .textInput .date-littleBlock {
-            width: 20px;
-            height: 20px;
-            background-color: none; }
-          .content__body .body__main .form__container .body-form .form__element .textInput .material-date {
-            color: #052a7b; }
-        .content__body .body__main .form__container .body-form .form__element .date-input {
-          justify-content: flex-end; }
-        .content__body .body__main .form__container .body-form .form__element .radio__container {
-          width: 100%;
-          height: calc(100% - 21px);
-          color: #787878;
-          align-items: center;
-          margin-top: 5px; }
-          .content__body .body__main .form__container .body-form .form__element .radio__container .radio__box {
-            height: 100%;
-            width: 50%;
+        .content__body .body__main .form__container .body-form > div .date {
+          position: relative; }
+        .content__body .body__main .form__container .body-form > div .form__element {
+          width: 100%; }
+          .content__body .body__main .form__container .body-form > div .form__element span {
+            background-color: #f2be87; }
+          .content__body .body__main .form__container .body-form > div .form__element .textInput {
+            margin-top: 5px;
+            padding: 10px; }
+            .content__body .body__main .form__container .body-form > div .form__element .textInput .date-littleBlock {
+              width: 20px;
+              height: 20px;
+              background-color: none; }
+            .content__body .body__main .form__container .body-form > div .form__element .textInput .material-date {
+              color: #052a7b; }
+          .content__body .body__main .form__container .body-form > div .form__element .date-input {
+            justify-content: flex-end; }
+          .content__body .body__main .form__container .body-form > div .form__element .radio__container {
+            width: 100%;
+            height: calc(100% - 21px);
+            color: #787878;
             align-items: center;
-            border: 1px solid #d2cfcf;
-            padding: 0 10px; }
-            .content__body .body__main .form__container .body-form .form__element .radio__container .radio__box input[type="radio"] {
-              cursor: pointer; }
-            .content__body .body__main .form__container .body-form .form__element .radio__container .radio__box label {
-              color: transparent;
-              background-color: #f2be87;
-              margin-left: 10px;
-              padding-top: 2px;
-              cursor: pointer; }
+            margin-top: 5px; }
+            .content__body .body__main .form__container .body-form > div .form__element .radio__container .radio__box {
+              height: 100%;
+              width: 50%;
+              align-items: center;
+              border: 1px solid #d2cfcf;
+              padding: 0 10px; }
+              .content__body .body__main .form__container .body-form > div .form__element .radio__container .radio__box input[type="radio"] {
+                cursor: pointer; }
+              .content__body .body__main .form__container .body-form > div .form__element .radio__container .radio__box label {
+                color: transparent;
+                background-color: #f2be87;
+                margin-left: 10px;
+                padding-top: 2px;
+                cursor: pointer; }
   .content__body .body__footer {
     justify-content: flex-end; }
     .content__body .body__footer .btn-continue {
@@ -710,7 +719,7 @@ html, body, #root {
       padding: 0;
       border: 0;
       background-color: #f96f57;
-      font-family: 'Roboto';
+      font-family: "Roboto";
       color: transparent; }
 
 .content__container2 {

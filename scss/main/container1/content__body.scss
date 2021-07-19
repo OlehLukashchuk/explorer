@@ -14,10 +14,10 @@
     .header__line {
       width: 85%;
       height: 1px;
-      border: 1px solid #d2cfcf
+      border: 1px solid #d2cfcf;
     }
   }
-
+ 
   .body__main {
     flex-direction: column;
     margin-top: 40px;
@@ -27,62 +27,62 @@
         width: 100%;
         justify-content: space-between;
         margin-bottom: 30px;
-
-        .date {
-          position: relative;
-
-        }
-
-        .form__element {
+        & > div {
           width: 30%;
-
-          span {
-            background-color: #f2be87;
+          .date {
+            position: relative;
           }
 
-          .textInput {
-            margin-top: 5px;
-            padding: 10px;
-
-            .date-littleBlock {
-              width: 20px;
-              height: 20px;
-              background-color: none;
-            }
-            .material-date{
-              color : #052a7b;
-            }
-          }
-
-          .date-input {
-            justify-content: flex-end;
-
-          }
-
-          .radio__container {
+          .form__element {
             width: 100%;
-            height: calc(100% - 21px);
-            color: #787878;
-            align-items: center;
-            margin-top: 5px;
 
-            .radio__box {
-              height: 100%;
-              width: 50%;
-              align-items: center;
-              border: 1px solid #d2cfcf;
-              padding: 0 10px;
+            span {
+              background-color: #f2be87;
+            }
 
-              input[type="radio"] {
-                cursor: pointer;
+            .textInput {
+              margin-top: 5px;
+              padding: 10px;
+
+              .date-littleBlock {
+                width: 20px;
+                height: 20px;
+                background-color: none;
               }
+              .material-date {
+                color: #052a7b;
+              }
+            }
 
-              label {
-                color: transparent;
-                background-color: #f2be87;
-                margin-left: 10px;
-                padding-top: 2px;
-                cursor: pointer;
+            .date-input {
+              justify-content: flex-end;
+            }
+
+            .radio__container {
+              width: 100%;
+              height: calc(100% - 21px);
+              color: #787878;
+              align-items: center;
+              margin-top: 5px;
+
+              .radio__box {
+                height: 100%;
+                width: 50%;
+                align-items: center;
+                border: 1px solid #d2cfcf;
+                padding: 0 10px;
+
+                input[type="radio"] {
+                  cursor: pointer;
+                }
+
+                label {
+                  color: transparent;
+                  background-color: #f2be87;
+                  margin-left: 10px;
+                  padding-top: 2px;
+                  cursor: pointer;
+                }
               }
             }
           }
@@ -100,7 +100,7 @@
       padding: 0;
       border: 0;
       background-color: #f96f57;
-      font-family: 'Roboto';
+      font-family: "Roboto";
       color: transparent;
     }
   }
