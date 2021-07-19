@@ -1,0 +1,32 @@
+.container2-slider {
+  width: 100%;
+  margin-top: 50px;
+  justify-content: center; }
+  .container2-slider button {
+    padding: 0;
+    background: none;
+    border: none; }
+    .container2-slider button i {
+      font-size: 40px;
+      color: #307ff7; }
+  .container2-slider .slider-elementsContainer {
+    margin: 0 20px;
+    min-height: 100px; }
+    .container2-slider .slider-elementsContainer .slider-element {
+      flex-direction: column;
+      align-items: center;
+      margin: 0 20px; }
+      .container2-slider .slider-elementsContainer .slider-element img {
+        width: 75px; }
+      .container2-slider .slider-elementsContainer .slider-element .button-buy {
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        box-shadow: 0px 0px 2px 0px green;
+        border: 1px solid #099c09;
+        border-radius: 10px;
+        cursor: pointer; }
+        .container2-slider .slider-elementsContainer .slider-element .button-buy i {
+          color: green;
+          font-size: 17px; }

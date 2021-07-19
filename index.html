@@ -10,10 +10,8 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div id = "desktop" >
-
-
-      
+    <div>d id = "desktop" ></div>
+ 
       <div id = "browser" >
 
         <div id = "browser-top" >
@@ -134,116 +132,304 @@
                       </div>
                     </div>
                     <!--content__header-->
-                    <div class="content__body">
-                      <div class="body__header flex-box">
-                        <div class="header__text">
-                          <span>Datos personales</span>
+                    <div class="content__container1" style="display:none">
+                      <div class="content__body">
+                        <div class="body__header flex-box">
+                          <div class="header__text">
+                            <span>Datos personales</span>
+                          </div>
+                          <hr class="header__line"></hr>
                         </div>
-                        <hr class="header__line"></hr>
+                        <!--body__header-->
+                        <div class="body__main flex-box">
+                            <div class="form__container">
+                              <form action="/" class="body-form flex-box">
+                                <div class="form__element flex-box">
+                                  <span>Nombre</span>
+                                  <div class="textInput flex-box">
+                                    <div class="text-style"></div>
+                                    <div class="text-style"></div>
+                                    <div class="text-style"></div>
+                                    <div class="text-style"></div>
+                                    <div class="text-style"></div>
+                                  </div>
+                                </div>
+                                <div class="form__element flex-box">
+                                  <span>Primer apeilido</span>
+                                  <div class="textInput"></div>
+                                </div>
+                                <div class="form__element flex-box">
+                                  <span>Segundo apellido</span>
+                                  <div class="textInput"></div>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="form__container">
+                              <form action="/" class="body-form flex-box">
+                                <div class="form__element flex-box">
+                                  <span>DNI/NIE</span>
+                                  <div class="textInput"></div>
+                                </div>
+                                <div class="form__element flex-box date">
+                                  <span>Fecha de nacimiento</span>
+                                  <div class="textInput flex-box date-input">
+                                  <i class="material-icons material-date">event</i>
+                                  </div>
+                                  <div class="date-block">
+                                    <div class="date-block__header">
+                                      <div></div>
+                                      <div></div>
+                                    </div>
+                                    <div class="date-block__body flex-box">
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div class="chosen-date"></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div class="chosen-date"></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div class="chosen-date"></div>
+                                      <div></div>
+                                      <div></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form__element flex-box">
+                                  <span>Genero</span>
+                                  <div class="radio__container flex-box">
+                                    <div class="radio__box flex-box">
+                                      <input name="gender" type="radio" id="radio-male">
+                                      <label for="radio-male">Mujer</label>
+                                    </div>
+                                    <div class="radio__box flex-box">
+                                      <input name="gender" type="radio" id="radio-female">
+                                      <label for="radio-female">Hombre</label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="form__container">
+                              <form action="/" class="body-form flex-box">
+                                <div class="form__element flex-box">
+                                  <span>Correo electorico</span>
+                                  <div class="textInput"></div>
+                                </div>
+                                <div class="form__element flex-box">
+                                  <span>Telefono movil</span>
+                                  <div class="textInput"></div>
+                                </div>
+                                <div class="form__element flex-box">
+                                  <span>Telefono fijo</span>
+                                  <div class="textInput"></div>
+                                </div>
+                              </form>
+                            </div>
+                        </div>
+                        <!--body__main-->
+                        <div class="body__footer flex-box">
+                          <button class="btn-continue">Continuar</button>
+                        </div>
                       </div>
-                      <!--body__header-->
-                      <div class="body__main flex-box">
-                          <div class="form__container">
-                            <form action="/" class="body-form flex-box">
-                              <div class="form__element flex-box">
-                                <span>Nombre</span>
-                                <div class="textInput flex-box">
-                                  <div class="text-style"></div>
-                                  <div class="text-style"></div>
-                                  <div class="text-style"></div>
-                                  <div class="text-style"></div>
-                                  <div class="text-style"></div>
-                                </div>
-                              </div>
-                              <div class="form__element flex-box">
-                                <span>Primer apeilido</span>
-                                <div class="textInput"></div>
-                              </div>
-                              <div class="form__element flex-box">
-                                <span>Segundo apellido</span>
-                                <div class="textInput"></div>
-                              </div>
-                            </form>
+                    <!--content__body-->
+                    </div>
+                    <!--content__container1-->
+                    <div class="content__container2 flex-box">
+                      <div class="container2-slider flex-box">
+                        <button class="arrowLeft">
+                          <i class="material-icons">arrow_back</i>
+                        </button>
+                        <div class="slider-elementsContainer flex-box">
+                          <div class="slider-element flex-box">
+                            <picture>
+                              <img src="/img/toy-train.png" alt="">
+                            </picture>
+                            <div class="button-buy flex-box"><i class="material-icons">attach_money</i></div>
                           </div>
-                          <div class="form__container">
-                            <form action="/" class="body-form flex-box">
-                              <div class="form__element flex-box">
-                                <span>DNI/NIE</span>
-                                <div class="textInput"></div>
-                              </div>
-                              <div class="form__element flex-box date">
-                                <span>Fecha de nacimiento</span>
-                                <div class="textInput flex-box date-input">
-                                <i class="material-icons material-date">event</i>
-                                </div>
-                                <div class="date-block">
-                                  <div class="date-block__header">
-                                    <div></div>
-                                    <div></div>
-                                  </div>
-                                  <div class="date-block__body flex-box">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div class="chosen-date"></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div class="chosen-date"></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div class="chosen-date"></div>
-                                    <div></div>
-                                    <div></div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="form__element flex-box">
-                                <span>Genero</span>
-                                <div class="radio__container flex-box">
-                                  <div class="radio__box flex-box">
-                                    <input name="gender" type="radio" id="radio-male">
-                                    <label for="radio-male">Mujer</label>
-                                  </div>
-                                  <div class="radio__box flex-box">
-                                    <input name="gender" type="radio" id="radio-female">
-                                    <label for="radio-female">Hombre</label>
-                                  </div>
-                                </div>
-                              </div>
-                            </form>
+                          <div class="slider-element flex-box">
+                            <picture>
+                              <img src="/img/toy-train.png" alt="">
+                            </picture>
+                            <div class="button-buy flex-box"><i class="material-icons">attach_money</i></div>
                           </div>
-                          <div class="form__container">
-                            <form action="/" class="body-form flex-box">
-                              <div class="form__element flex-box">
-                                <span>Correo electorico</span>
-                                <div class="textInput"></div>
-                              </div>
-                              <div class="form__element flex-box">
-                                <span>Telefono movil</span>
-                                <div class="textInput"></div>
-                              </div>
-                              <div class="form__element flex-box">
-                                <span>Telefono fijo</span>
-                                <div class="textInput"></div>
-                              </div>
-                            </form>
+                          <div class="slider-element flex-box">
+                            <picture>
+                              <img src="/img/toy-train.png" alt="">
+                            </picture>
+                            <div class="button-buy flex-box"><i class="material-icons">attach_money</i></div>
                           </div>
+                        </div>
+                        <button class="arrowRight">
+                          <i class="material-icons">arrow_forward</i>
+                        </button>
                       </div>
-                      <!--body__main-->
-                      <div class="body__footer flex-box">
-                        <button class="btn-continue">Continuar</button>
+                      <div class="container2-selectProduct flex-box">
+                        <!-- <div class="select-search textInput"><span>Search</span></div>
+                        <select size = 5>
+                          <option value="">One</option>
+                          <option value="">Two</option>
+                          <option value="">Three</option>
+                          <option value="">Four</option>
+                          <option value="">Five</option>
+                          <option value="">Six</option>
+                          <option value="">Seven</option>
+                          <option value="">Eight</option>
+                          <option value="">Nine</option>
+                          <option value="">Ten</option>
+                      </select> -->
+                      <div class="price-container flex-box">
+                        <div class="setPrice">
+                          <p>31232</p>
+                        </div>
+                        <span> — </span>
+                        <div class="setPrice">
+                          <p>31232</p>
+                        </div>
+                        <div class="price-check">
+                          <div class="price-check__leftCircle price-circle"></div>
+                          <div class="price-check__rightCircle price-circle"></div>
+                        </div>
+                      </div>
+                      <div class="price-container flex-box">
+                        <div class="setPrice">
+                          <p>31232</p>
+                        </div>
+                        <span> — </span>
+                        <div class="setPrice">
+                          <p>31232</p>
+                        </div>
+                        <div class="price-check">
+                          <div class="price-check__leftCircle price-circle"></div>
+                          <div class="price-check__rightCircle price-circle"></div>
+                        </div>
+                      </div>
+                      <div class="price-container flex-box">
+                        <div class="setPrice">
+                          <p>31232</p>
+                        </div>
+                        <span> — </span>
+                        <div class="setPrice">
+                          <p>31232</p>
+                        </div>
+                        <div class="price-check">
+                          <div class="price-check__leftCircle price-circle"></div>
+                          <div class="price-check__rightCircle price-circle"></div>
+                        </div>
+                      </div>
+                      </div>
+                      <!--container2__selectProduct-->
+                      <div class="container2__selectFile">
+                        <input type="file" id="file">
+                        <label for="file">Select file</label>
+                        <input type="file" id="file">
+                        <label for="file">Select file</label>
                       </div>
                     </div>
-                    <!--content__body-->
+                    <div class="content__container3" style="display:none">
+                      <div class="container3__header flex-box">
+                        <div class="header-left flex-box">
+                          <div class="img-container flex-box">
+                            <picture>
+                              <img src="/img/visa-logo-png-transparent.png">
+                            </picture>
+                            <picture>
+                              <img src="/img/Mastercard-logo.png">
+                            </picture>
+                          </div>
+                          <div class="text-container flex-box">
+                            <input type="radio" id="visa-pay">
+                            <label for="visa-pay">Pay 340.00$ with credit card</label>
+                          </div>
+                        </div>
+                        <div class="header-right">
+                          <div class="img-container flex-box">
+                            <picture>
+                              <img src="/img/PayPal.svg.png">
+                            </picture>
+
+                          </div>
+                          <div class="text-container flex-box">
+                            <input type="radio" id="visa-pay">
+                            <label for="visa-pay">Pay 340.00$ with credit card</label>
+                          </div>
+                        </div>
+                        </div>
+                      <!--container3__header-->
+                      <div class="container3__main">
+                        <form action="/" class="container3-form flex-box">
+                          <div class="container3-form__element">
+                            <p>Cardholder's Name</p>
+                            <div class="textInput">
+                              <i class="material-icons">person</i>
+                            </div>
+                          </div>
+                          <div class="container3-form__element">
+                            <p>Card Name</p>
+                            <div class="textInput flex-box">
+                              <i class="material-icons">payment</i>
+                            </div>
+                          </div>
+                          <div class="container3-form__element">
+                            <p>Valid thru</p>
+                            <div class="textInput flex-box date-element">
+                              <i class="material-icons material-date">event</i>
+                            </div>
+                            <div class="date-block">
+                              <div class="date-block__header">
+                                <div></div>
+                                <div></div>
+                              </div>
+                              <div class="date-block__body flex-box">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div class="chosen-date"></div>
+                                <div></div>
+                                <div></div>
+                                <div class="chosen-date"></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div class="chosen-date"></div>
+                                <div></div>
+                                <div></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="container3-form__element">
+                            <p>CVV / CVC *</p>
+                            <div class="textInput">
+                              <i class="material-icons">lock</i>
+                            </div>
+                          </div>
+                          <div class="container3-form__element">
+        
+                          </div>
+                        </form>
+                      </div>
+                      </div>
+                      <!--container3__main-->
+                    </div>
+                    <!--content__container3-->
                   </div>
                   <!--main__content-->
                 </div>
@@ -251,52 +437,48 @@
               </main>
               <!--main-->
               <footer></footer>
-            </div>
+              <div id = "chromane_iframe_container" class = "not-active" >
 
-
-
-            <div id = "chromane_iframe_container" class = "not-active" >
-
-              <div id = "chromane_iframe_toggle_button" >
-
-                <svg class = "chromane_chevron_left" style="width:24px;height:24px" viewBox="0 0 24 24">
-                  <path fill="white" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
-                </svg>
-
-                <svg class = "chromane_chevron_right" style="width:24px;height:24px" viewBox="0 0 24 24">
-                  <path fill="white" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                </svg>
-
-              </div>
-
-              <div id = "chromane_iframe" >
-                <div id = "header" >
-
-                  <div class="icon menu" style="margin-left: 17px" v-on:click="handle_event( 'menu_button_click' )">
-                    <svg viewBox="0 0 24 24">
-                      <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
-                    </svg>
-                  </div>
-
-                  <div style="flex-grow: 1"></div>
-
-                  <span>Horse Betting</span>
-
-                  <div style="flex-grow: 1"></div>
-
-                  <div class="icon close" style="margin-right: 15px; margin-left: 2px;" v-on:click="handle_event( 'close_button_click' )">
-                    <svg viewBox="0 0 24 24">
-                      <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
-                    </svg>
-                  </div>
-
-                  <div id = "dropshadow" ></div>
-
+                <div id = "chromane_iframe_toggle_button" >
+  
+                  <svg class = "chromane_chevron_left" style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="white" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
+                  </svg>
+  
+                  <svg class = "chromane_chevron_right" style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="white" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                  </svg>
+  
                 </div>
+  
+                <div id = "chromane_iframe" >
+                  <div id = "header" >
+  
+                    <div class="icon menu" style="margin-left: 17px" v-on:click="handle_event( 'menu_button_click' )">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                      </svg>
+                    </div>
+  
+                    <div style="flex-grow: 1"></div>
+  
+                    <span>Horse Betting</span>
+  
+                    <div style="flex-grow: 1"></div>
+  
+                    <div class="icon close" style="margin-right: 15px; margin-left: 2px;" v-on:click="handle_event( 'close_button_click' )">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                      </svg>
+                    </div>
+  
+                    <div id = "dropshadow" ></div>
+  
+                  </div>
+                </div>
+  
               </div>
-
             </div>
-
 
           </div>
 

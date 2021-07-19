@@ -1,0 +1,27 @@
+.container2__selectFile {
+  margin-left: 50px;
+  #file {
+    display: none;
+  }
+
+  label {
+    display: block;
+    width: 400px;
+    height: 100px;
+    border: 5px dashed #a2c1f2;
+    position: relative;
+    background: url("/img/png-transparent-paper-clip-logo-attach-text-logo-flyer.png")
+      no-repeat 67% /30px;
+    cursor: pointer;
+    margin: 25px 0;
+    &::before {
+      content: "select file";
+      position: absolute;
+      font-size: 20px;
+      color: transparent;
+      top: 40%;
+      left: 35%;
+      background-color: #f2be87;
+    }
+  }
+}

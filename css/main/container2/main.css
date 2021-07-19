@@ -1,0 +1,24 @@
+.container2-form {
+  justify-content: space-between; }
+  .container2-form__element:first-child, .container2-form__element:nth-child(2) {
+    width: 49%; }
+  .container2-form__element:nth-child(3), .container2-form__element:nth-child(4) {
+    width: 23.5%; }
+  .container2-form__element:last-child {
+    width: 49%; }
+  .container2-form__element:nth-child(3) {
+    position: relative; }
+    .container2-form__element:nth-child(3) .date-block {
+      bottom: 20px;
+      right: -250px; }
+  .container2-form p {
+    display: inline-block;
+    background-color: #f2be87;
+    margin: 10px 0 5px; }
+  .container2-form .textInput {
+    position: relative; }
+  .container2-form i {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: #052a7b; }

@@ -1,10 +1,10 @@
-@import './base/mixin';
-@import './base/variables';
-@import './base/reset';
+@import "./base/mixin";
+@import "./base/variables";
+@import "./base/reset";
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Medium.ttf');
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.ttf");
 }
 
 * {
@@ -13,7 +13,7 @@
 
 body {
   color: transparent;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   overflow-x: hidden;
 }
 
@@ -22,17 +22,21 @@ body {
   flex-wrap: wrap;
 }
 
-.pageContainer{
+.pageContainer {
   width: 100%;
 }
-
-@import './header/header.scss';
-@import './main/main.scss';
-@import './main/content__header.scss';
-@import './main/content__body.scss';
-@import './main/input.scss';
-@import './main/text-style.scss';
-@import './main/secondSection/secondSection.scss';
-@import './main/secondSection/account.scss';
-@import './main/browser.scss';
-
+@import "./browser.scss";
+@import "./header/header.scss";
+@import "./main/main.scss";
+@import "./main/container1/content__header.scss";
+@import "./main/container1/content__body.scss";
+@import "./main/container2/container2.scss";
+@import "./main/container2/slider.scss";
+@import "./main/container2/select.scss";
+@import "./main/container2/inputFile.scss";
+@import "./main/container3/container3.scss";
+@import "./main/container3/header.scss";
+@import "./main/container3/main.scss";
+@import "./main/input.scss";
+@import "./main/date-block.scss";
+@import "./main/text-style.scss";
