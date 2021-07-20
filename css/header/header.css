@@ -8,12 +8,13 @@
   .header__logo {
     align-items: center; }
     .header__logo span {
-      background-color: #fffaff; }
+      color: white;
+      font-size: 25px; }
   .header__nav {
     align-items: center; }
   .header__menu li {
     margin-right: 30px; }
     .header__menu li a {
-      color: transparent;
-      background-color: #fffaff;
-      text-decoration: none; }
+      color: white;
+      text-decoration: none;
+      font-size: 17px; }

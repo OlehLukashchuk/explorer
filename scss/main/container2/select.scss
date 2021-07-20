@@ -8,29 +8,29 @@
       background-color: #f2be87;
     }
   }
-  select {
-    border: none;
-    padding: 5px;
-    margin: 2px;
-    option {
-      font-size: 20px;
-      color: transparent;
-      background-color: red;
-      //   background: url(/img/toy-train.png) no-repeat center center / 30px;
-      margin: 10px;
-      position: relative;
-      ::before {
-        content: "";
-        width: 10px;
-        height: 10px;
-        position: absolute;
-        background: red;
-      }
-    }
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
+  // select {
+  //   border: none;
+  //   padding: 5px;
+  //   margin: 2px;
+  //   option {
+  //     font-size: 20px;
+  //     color: transparent;
+  //     background-color: red;
+  //     //   background: url(/img/toy-train.png) no-repeat center center / 30px;
+  //     margin: 10px;
+  //     position: relative;
+  //     ::before {
+  //       content: "";
+  //       width: 10px;
+  //       height: 10px;
+  //       position: absolute;
+  //       background: red;
+  //     }
+  //   }
+  //   &::-webkit-scrollbar {
+  //     display: none;
+  //   }
+  // }
   .price-container {
     width: 100%;
     margin-top: 20px;
@@ -43,7 +43,7 @@
       padding: 10px 0px 10px 15px;
       p {
         display: inline-block;
-        background-color: #f2be87;
+        // background-color: #f2be87;
       }
     }
     .price-check {

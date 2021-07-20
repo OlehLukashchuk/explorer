@@ -7,7 +7,7 @@
     align-items: center;
 
     .header__text {
-      background-color: #f2be87;
+      // background-color: #f2be87;
       font-size: 16px;
     }
 
@@ -39,9 +39,9 @@
           .form__element {
             width: 100%;
 
-            span {
-              background-color: #f2be87;
-            }
+            // span {
+            //   background-color: #f2be87;
+            // }
 
             .textInput {
               margin-top: 5px;
@@ -74,15 +74,15 @@
                 width: 50%;
                 align-items: center;
                 border: 1px solid #d2cfcf;
-                padding: 0 10px;
+                padding: 10px;
 
                 input[type="radio"] {
                   cursor: pointer;
                 }
 
                 label {
-                  color: transparent;
-                  background-color: #f2be87;
+                  // color: transparent;
+                  // background-color: #f2be87;
                   margin-left: 10px;
                   padding-top: 2px;
                   cursor: pointer;
@@ -105,7 +105,7 @@
       border: 0;
       background-color: #f96f57;
       font-family: "Roboto";
-      color: transparent;
+      color: white;
     }
   }
 }

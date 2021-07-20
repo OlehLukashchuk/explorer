@@ -329,7 +329,6 @@ textarea {
   box-sizing: border-box; }
 
 body {
-  color: transparent;
   font-family: "Roboto";
   overflow-x: hidden; }
 
@@ -595,15 +594,16 @@ html, body, #root {
   .header__logo {
     align-items: center; }
     .header__logo span {
-      background-color: #fffaff; }
+      color: white;
+      font-size: 25px; }
   .header__nav {
     align-items: center; }
   .header__menu li {
     margin-right: 30px; }
     .header__menu li a {
-      color: transparent;
-      background-color: #fffaff;
-      text-decoration: none; }
+      color: white;
+      text-decoration: none;
+      font-size: 17px; }
 
 .main {
   width: 100%;
@@ -631,7 +631,7 @@ html, body, #root {
 .active {
   background-color: #a2c1f2; }
   .active span {
-    background-color: #fffaff !important; }
+    color: white; }
 
 .content__header {
   padding: 0 45px; }
@@ -656,8 +656,6 @@ html, body, #root {
       font-size: 20px;
       align-items: center;
       text-transform: uppercase; }
-      .content__header .header__element .element__name span {
-        background-color: #f2be87; }
 
 .content__body {
   padding: 25px;
@@ -666,7 +664,6 @@ html, body, #root {
   .content__body .body__header {
     align-items: center; }
     .content__body .body__header .header__text {
-      background-color: #f2be87;
       font-size: 16px; }
     .content__body .body__header .header__line {
       width: 85%;
@@ -686,8 +683,6 @@ html, body, #root {
           position: relative; }
         .content__body .body__main .form__container .body-form > div .form__element {
           width: 100%; }
-          .content__body .body__main .form__container .body-form > div .form__element span {
-            background-color: #f2be87; }
           .content__body .body__main .form__container .body-form > div .form__element .textInput {
             margin-top: 5px;
             padding: 10px; }
@@ -710,12 +705,10 @@ html, body, #root {
               width: 50%;
               align-items: center;
               border: 1px solid #d2cfcf;
-              padding: 0 10px; }
+              padding: 10px; }
               .content__body .body__main .form__container .body-form > div .form__element .radio__container .radio__box input[type="radio"] {
                 cursor: pointer; }
               .content__body .body__main .form__container .body-form > div .form__element .radio__container .radio__box label {
-                color: transparent;
-                background-color: #f2be87;
                 margin-left: 10px;
                 padding-top: 2px;
                 cursor: pointer; }
@@ -728,7 +721,7 @@ html, body, #root {
       border: 0;
       background-color: #f96f57;
       font-family: "Roboto";
-      color: transparent; }
+      color: white; }
 
 .content__container2 {
   align-items: center; }
@@ -774,24 +767,6 @@ html, body, #root {
     padding: 10px; }
     .container2-selectProduct .select-search span {
       background-color: #f2be87; }
-  .container2-selectProduct select {
-    border: none;
-    padding: 5px;
-    margin: 2px; }
-    .container2-selectProduct select option {
-      font-size: 20px;
-      color: transparent;
-      background-color: red;
-      margin: 10px;
-      position: relative; }
-      .container2-selectProduct select option ::before {
-        content: "";
-        width: 10px;
-        height: 10px;
-        position: absolute;
-        background: red; }
-    .container2-selectProduct select::-webkit-scrollbar {
-      display: none; }
   .container2-selectProduct .price-container {
     width: 100%;
     margin-top: 20px; }
@@ -803,8 +778,7 @@ html, body, #root {
       border-radius: 10px;
       padding: 10px 0px 10px 15px; }
       .container2-selectProduct .price-container .setPrice p {
-        display: inline-block;
-        background-color: #f2be87; }
+        display: inline-block; }
     .container2-selectProduct .price-container .price-check {
       width: 100%;
       height: 3px;
@@ -840,15 +814,15 @@ html, body, #root {
     position: relative;
     background: url("/img/png-transparent-paper-clip-logo-attach-text-logo-flyer.png") no-repeat 67%/30px;
     cursor: pointer;
-    margin: 25px 0; }
+    margin: 25px 0;
+    color: transparent; }
     .container2__selectFile label::before {
-      content: "select file";
+      content: "Select file";
       position: absolute;
       font-size: 20px;
-      color: transparent;
+      color: black;
       top: 40%;
-      left: 35%;
-      background-color: #f2be87; }
+      left: 35%; }
 
 .container3__main {
   margin-top: 40px; }
@@ -873,7 +847,6 @@ html, body, #root {
       align-items: center;
       margin-top: 20px; }
       .container3__header .header-left .text-container label, .container3__header .header-right .text-container label {
-        background-color: #f2be87;
         margin: 0 10px;
         font-size: 25px; }
   .container3__header .header-right {
@@ -900,7 +873,6 @@ html, body, #root {
       right: -250px; }
   .container3-form p {
     display: inline-block;
-    background-color: #f2be87;
     margin: 10px 0 5px; }
   .container3-form .textInput {
     position: relative; }
@@ -957,9 +929,10 @@ html, body, #root {
 .table-page header {
   width: 100%;
   height: 75px;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  position: relative; }
+  position: relative;
+  padding-right: 55px; }
   .table-page header .header__logo {
     width: 50px;
     height: 50px;
@@ -971,7 +944,7 @@ html, body, #root {
       color: #2a437d;
       font-size: 40px; }
   .table-page header .header__search {
-    width: 450px;
+    width: 70%;
     height: 40px;
     background-color: #f4f4f4;
     padding: 10px 10px;
@@ -979,7 +952,6 @@ html, body, #root {
     color: #b5b3be; }
     .table-page header .header__search p {
       display: inline-block;
-      background-color: #b5b3be;
       margin-left: 10px; }
 
 .table-page__aside {
@@ -990,7 +962,7 @@ html, body, #root {
     .table-page__aside .aside__nav ul {
       flex-direction: column; }
       .table-page__aside .aside__nav ul li i {
-        color: black;
+        color: gray;
         font-size: 40px; }
       .table-page__aside .aside__nav ul li:not(last-child) {
         margin-bottom: 30px; }
@@ -1012,7 +984,6 @@ html, body, #root {
       padding: 30px 0;
       align-items: center; }
       .table-page__main .table-container__header h1 {
-        background-color: #2a437d;
         font-size: 45px; }
       .table-page__main .table-container__header .btn-order {
         height: 35px;
@@ -1025,7 +996,8 @@ html, body, #root {
         font-weight: bold; }
         .table-page__main .table-container__header .btn-order p {
           display: inline-block;
-          font-size: 13px; }
+          font-size: 15px;
+          color: #004447; }
     .table-page__main .table-container__main .table {
       background-color: white;
       box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
@@ -1043,10 +1015,12 @@ html, body, #root {
           text-align: center; }
           .table-page__main .table-container__main .table .table-head > div p {
             display: inline-block;
-            background-color: #f2be87;
-            font-size: 20px; }
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #afacbf; }
       .table-page__main .table-container__main .table .table-body {
-        min-height: 400px; }
+        min-height: 500px;
+        margin-top: 10px; }
         .table-page__main .table-container__main .table .table-body .table-search__container {
           width: 100%;
           padding: 10px 20px; }
@@ -1054,24 +1028,35 @@ html, body, #root {
             height: 100%;
             background-color: #f4f4f4;
             border-radius: 5px;
-            color: #aeadb5;
+            color: #a4a2b0;
             align-items: center;
-            padding: 5px; }
+            padding: 7px; }
             .table-page__main .table-container__main .table .table-body .table-search__container .table-search p {
               display: inline-block;
-              margin-left: 10px;
-              color: transparent;
-              background-color: #aeadb5; }
-        .table-page__main .table-container__main .table .table-body .table-rows__container .table-row {
-          padding: 5px 20px;
+              margin-left: 10px; }
+            .table-page__main .table-container__main .table .table-body .table-search__container .table-search i {
+              font-size: 30px; }
+        .table-page__main .table-container__main .table .table-body .table-rows__container .table-row__head, .table-page__main .table-container__main .table .table-body .table-rows__container .table-row {
+          padding: 5px 25px;
           align-items: center;
-          justify-content: space-between; }
-          .table-page__main .table-container__main .table .table-body .table-rows__container .table-row .table-checkbox {
+          justify-content: space-between;
+          border-bottom: 1px solid #f4f4f4; }
+          .table-page__main .table-container__main .table .table-body .table-rows__container .table-row__head .table-checkbox, .table-page__main .table-container__main .table .table-body .table-rows__container .table-row .table-checkbox {
             width: 20px;
             height: 20px;
             border: 1px solid #a2c1f2;
             box-shadow: 0px 0px 1px 0px black; }
-          .table-page__main .table-container__main .table .table-body .table-rows__container .table-row .table-text {
-            padding: 10px; }
-            .table-page__main .table-container__main .table .table-body .table-rows__container .table-row .table-text p {
-              background-color: #84859d; }
+          .table-page__main .table-container__main .table .table-body .table-rows__container .table-row__head .table-text, .table-page__main .table-container__main .table .table-body .table-rows__container .table-row .table-text {
+            width: 18%;
+            padding: 10px;
+            color: #81809f; }
+        .table-page__main .table-container__main .table .table-body .table-rows__container .table-row .table-text {
+          color: black; }
+        .table-page__main .table-container__main .table .table-body .table-rows__container .table-row .table-text:nth-child(5) p,
+        .table-page__main .table-container__main .table .table-body .table-rows__container .table-row .table-text:last-child p {
+          display: inline-block;
+          background-color: #7bc3b7;
+          padding: 2px 15px;
+          border-radius: 5px; }
+        .table-page__main .table-container__main .table .table-body .table-rows__container .table-row:last-child {
+          border: none; }

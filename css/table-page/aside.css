@@ -6,7 +6,7 @@
     .table-page__aside .aside__nav ul {
       flex-direction: column; }
       .table-page__aside .aside__nav ul li i {
-        color: black;
+        color: gray;
         font-size: 40px; }
       .table-page__aside .aside__nav ul li:not(last-child) {
         margin-bottom: 30px; }

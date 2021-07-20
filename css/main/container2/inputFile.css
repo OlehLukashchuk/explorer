@@ -10,12 +10,12 @@
     position: relative;
     background: url("/img/png-transparent-paper-clip-logo-attach-text-logo-flyer.png") no-repeat 67%/30px;
     cursor: pointer;
-    margin: 25px 0; }
+    margin: 25px 0;
+    color: transparent; }
     .container2__selectFile label::before {
-      content: "select file";
+      content: "Select file";
       position: absolute;
       font-size: 20px;
-      color: transparent;
+      color: black;
       top: 40%;
-      left: 35%;
-      background-color: #f2be87; }
+      left: 35%; }

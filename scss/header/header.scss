@@ -9,7 +9,8 @@
   &__logo {
     align-items: center;
     span{
-      background-color:#fffaff;
+      color: white;
+      font-size: 25px;
     }
   }
 
@@ -21,9 +22,9 @@
     li {
       margin-right: 30px;
       a{
-        color: transparent;
-        background-color:#fffaff;
+        color: white;
         text-decoration: none;
+        font-size: 17px;
       }
     }
   }

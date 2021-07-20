@@ -476,18 +476,25 @@
                         <div class="table-search__container">
                           <div class="table-search flex-box">
                             <i class="material-icons">search</i>
-                            <p>Search orders</p>
+                            <p>Search Orders</p>
                           </div>
                         </div>
                         <div class="table-rows__container">
-                          <div class="table-row flex-box" v-for="item in model.shop_model.table_rows_quantity">
+                          <div class="flex-box table-row__head" >
                             <div class="table-checkbox"></div>
                             <div class="table-text"><p>Order</p></div>
                             <div class="table-text"><p>Date</p></div>
                             <div class="table-text"><p>Customer</p></div>
                             <div class="table-text"><p>Payment Status</p></div>
-                            <div class="table-text"><p>Payment Status</p></div>
-                            <div class="table-text"><p>Payment Status</p></div>
+                            <div class="table-text"><p>Fulfillment Status</p></div>
+                          </div>
+                          <div class="table-row flex-box" v-for="item in model.shop_model.table_rows_quantity">
+                            <div class="table-checkbox"></div>
+                            <div class="table-text"><p>{{item.order}}</p></div>
+                            <div class="table-text"><p>{{item.date}}</p></div>
+                            <div class="table-text"><p>{{item.customer}}</p></div>
+                            <div class="table-text"><p>{{item.paymentStatus}}</p></div>
+                            <div class="table-text"><p>{{item.fulfillStatus}}</p></div>
                           </div>
                           
                         </div>

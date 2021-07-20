@@ -12,7 +12,7 @@ _state.model = {
     section_style: {
       left: "0%",
     },
-    section_index: 0,
+    section_index: 2,
 
     form_item_arr: [
       {
@@ -57,47 +57,96 @@ _state.model = {
     aside_nav_arr:[
       {
         text: 'house',
-        color : '#307ff7'
       },
       {
         text: 'local_grocery_store_outlined_icon',
-        color : '#a2c1f2'
+        color : '#0cd493'
       },
       {
         text: 'keyboard',
-        color : '#f2be87'
       },
       {
         text: 'person',
-        color : '#307ff7'
       },
       {
         text: 'trending_up',
-        color : '#f2be87'
       },
       {
         text: 'notifications_active_icon',
-        color : '#a2c1f2'
       },
     ],
     table_rows_quantity: [
       {
-        index:0
+        index:0,
+        order:'#10001',
+        date : 'Oct 6, 7:27 pm',
+        customer: 'John Crichton',
+        paymentStatus : 'Paid',
+        fulfillStatus : 'Fulfilled' 
       },
       {
-        index:1
+        index:1,
+        order:'#10002',
+        date : 'Oct 6, 7:27 pm',
+        customer: 'Cameron Mitchell',
+        paymentStatus : 'Paid',
+        fulfillStatus : 'Fulfilled' 
       },
       {
-        index:2
+        index:2,
+        order:'#10003',
+        date : 'Oct 6, 7:27 pm',
+        customer: 'Jack Beaver',
+        paymentStatus : 'Paid',
+        fulfillStatus : 'Fulfilled'
       },
       {
-        index:3
+        index:3,
+        order:'#10004',
+        date : 'Oct 6, 7:27 pm',
+        customer: 'Jon Snow',
+        paymentStatus : 'Paid',
+        fulfillStatus : 'Fulfilled' 
       },
       {
-        index:4
+        index:4,
+        order:'#10005',
+        date : 'Oct 6, 7:27 pm',
+        customer: 'John Crichton',
+        paymentStatus : 'Paid',
+        fulfillStatus : 'Fulfilled' 
       },
       {
-        index:5
+        index:5,
+        order:'#10006',
+        date : 'Oct 6, 7:27 pm',
+        customer: 'Jon Snow',
+        paymentStatus : 'Paid',
+        fulfillStatus : 'Fulfilled' 
+      },
+      {
+        index:6,
+        order:'#10007',
+        date : 'Oct 6, 7:27 pm',
+        customer: 'Cameron Mitchell',
+        paymentStatus : 'Paid',
+        fulfillStatus : 'Fulfilled' 
+      },
+      {
+        index:7,
+        order:'#10008',
+        date : 'Oct 6, 7:27 pm',
+        customer: 'Jack Beaver',
+        paymentStatus : 'Paid',
+        fulfillStatus : 'Fulfilled'
+      },
+      {
+        index:8,
+        order:'#10009',
+        date : 'Oct 6, 7:27 pm',
+        customer: 'Jon Snow',
+        paymentStatus : 'Paid',
+        fulfillStatus : 'Fulfilled' 
       },
     ]
   },
