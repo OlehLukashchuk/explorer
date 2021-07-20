@@ -1,9 +1,5 @@
 .table-page__aside {
   width: 100px;
-  height: 100vh;
-  position: absolute;
-  top: 75px;
-  left: 0;
   padding: 20px 0px 20px 30px; }
   .table-page__aside .aside__nav {
     width: 100%; }

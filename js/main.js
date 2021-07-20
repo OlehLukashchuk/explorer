@@ -54,6 +54,52 @@ _state.model = {
         index: 2,
       },
     ],
+    aside_nav_arr:[
+      {
+        text: 'house',
+        color : '#307ff7'
+      },
+      {
+        text: 'local_grocery_store_outlined_icon',
+        color : '#a2c1f2'
+      },
+      {
+        text: 'keyboard',
+        color : '#f2be87'
+      },
+      {
+        text: 'person',
+        color : '#307ff7'
+      },
+      {
+        text: 'trending_up',
+        color : '#f2be87'
+      },
+      {
+        text: 'notifications_active_icon',
+        color : '#a2c1f2'
+      },
+    ],
+    table_rows_quantity: [
+      {
+        index:0
+      },
+      {
+        index:1
+      },
+      {
+        index:2
+      },
+      {
+        index:3
+      },
+      {
+        index:4
+      },
+      {
+        index:5
+      },
+    ]
   },
 };
 

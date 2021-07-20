@@ -1,10 +1,9 @@
 .content__header {
-  border: 1px solid #d2cfcf;
-
+  padding: 0 45px;
   .header__element {
     width: calc(100% / 3);
     padding: 10px 15px;
-    border-right: 1px solid #d2cfcf;
+    border: 1px solid #d2cfcf;
     justify-content: space-around;
     cursor: pointer;
 

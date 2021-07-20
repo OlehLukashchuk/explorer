@@ -1,0 +1,111 @@
+.table-page__container {
+  height: 100%;
+  flex-direction: column;
+}
+
+.table-page__main {
+  flex-grow: 1;
+
+  .table-container {
+    background-color: #f9f9f9;
+    padding: 0 35px;
+    box-shadow: inset 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+      inset 0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+      inset 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    flex-grow: 1;
+    &__header {
+      padding: 30px 0;
+      align-items: center;
+      h1 {
+        background-color: #2a437d;
+        font-size: 45px;
+      }
+
+      .btn-order {
+        height: 35px;
+        margin-left: 30px;
+        background-color: #04db98;
+        border: none;
+        outline: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-weight: bold;
+        p {
+          display: inline-block;
+          font-size: 13px;
+        }
+      }
+    }
+    &__main {
+      .table {
+        background-color: white;
+        box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+          0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        .table-head {
+          min-height: 40px;
+          border: none;
+          box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+            0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+            0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+          align-items: center;
+
+          > div {
+            width: 15%;
+            height: 100%;
+            margin: 0px 20px;
+            text-align: center;
+            p {
+              display: inline-block;
+              background-color: #f2be87;
+              font-size: 20px;
+            }
+          }
+        }
+        .table-body {
+          min-height: 400px;
+          .table-search__container {
+            width: 100%;
+            padding: 10px 20px;
+            .table-search {
+              height: 100%;
+              background-color: #f4f4f4;
+              border-radius: 5px;
+              color: #aeadb5;
+              align-items: center;
+              padding: 5px;
+              p {
+                display: inline-block;
+                margin-left: 10px;
+                color: transparent;
+                background-color: #aeadb5;
+              }
+            }
+          }
+          .table-rows__container {
+            .table-row {
+              padding: 5px 20px;
+              align-items: center;
+              justify-content: space-between;
+
+              .table-checkbox {
+                width: 20px;
+                height: 20px;
+                border: 1px solid #a2c1f2;
+                box-shadow: 0px 0px 1px 0px black;
+              }
+              .table-text {
+                padding: 10px;
+                p {
+                  background-color: #84859d;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

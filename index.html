@@ -1,509 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div id = "desktop" >
- 
-      <div id = "browser" >
 
-        <div id = "browser-top" >
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-          <div class = "tab-container" >
+<body>
+  <div id="desktop">
 
-            <div class = "tab" >
+    <div id="browser">
 
-              <img src = "img/favicons/1.svg" >
-              <span>Orders</span>
+      <div id="browser-top">
 
-            </div>
+        <div class="tab-container">
 
-            <div class = "tab" >
+          <div class="tab">
 
-              <img src = "img/favicons/2.svg" >
-              <span>Buy cookies</span>
+            <img src="img/favicons/1.svg">
+            <span>Orders</span>
 
-            </div>
+          </div>
 
-            <div class = "tab selected" >
+          <div class="tab">
 
-              <img src = "img/favicons/2.svg" >
-              <span>Buy cookies</span>
+            <img src="img/favicons/2.svg">
+            <span>Buy cookies</span>
 
-            </div>
+          </div>
 
-            <div class = "tab" >
+          <div class="tab selected">
 
-              <img src = "img/favicons/2.svg" >
-              <span>Buy cookies</span>
+            <img src="img/favicons/2.svg">
+            <span>Buy cookies</span>
 
-            </div>
+          </div>
 
-            <div class = "tab" >
+          <div class="tab">
 
-              <img src = "img/favicons/2.svg" >
-              <span>Buy cookies</span>
+            <img src="img/favicons/2.svg">
+            <span>Buy cookies</span>
 
-            </div>
+          </div>
+
+          <div class="tab">
+
+            <img src="img/favicons/2.svg">
+            <span>Buy cookies</span>
 
           </div>
 
         </div>
 
-        <div id = "browser-mid" >
+      </div>
 
-          <div class = "nav_icon-container" >
+      <div id="browser-mid">
 
-            <svg viewBox="0 0 24 24">
-              <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
-            </svg>
+        <div class="nav_icon-container">
 
-            <svg viewBox="0 0 24 24">
-              <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
-            </svg>
+          <svg viewBox="0 0 24 24">
+            <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
+          </svg>
 
-            <svg viewBox="0 0 24 24">
-              <path d="M17.65,6.35C16.2,4.9 14.21,4 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20C15.73,20 18.84,17.45 19.73,14H17.65C16.83,16.33 14.61,18 12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6C13.66,6 15.14,6.69 16.22,7.78L13,11H20V4L17.65,6.35Z" />
-            </svg>
+          <svg viewBox="0 0 24 24">
+            <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+          </svg>
 
-          </div>
-
-          <div class = "omnibox" ></div>
-
-          <img class = "profile_picture" src = "img/user.svg" >
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M17.65,6.35C16.2,4.9 14.21,4 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20C15.73,20 18.84,17.45 19.73,14H17.65C16.83,16.33 14.61,18 12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6C13.66,6 15.14,6.69 16.22,7.78L13,11H20V4L17.65,6.35Z" />
+          </svg>
 
         </div>
 
-        <div id = "browser-main" >
+        <div class="omnibox"></div>
 
-          <div class = "browser-page" v-if = "model.active_page_name === 'shop'" >
+        <img class="profile_picture" src="img/user.svg">
 
-            <div class="pageContainer">
-              <header class="header flex-box">
-                <div class="header__logo flex-box">
-                  <span>MyCash</span>
-                </div>
-                <!--header__logo-->
-                <nav class="header__nav flex-box">
-                  <ul class="header__menu flex-box">
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Come funciona</a></li>
-                    <li><a href="">Prestamos</a></li>
-                    <li><a href="">Preguntas Frequentes</a></li>
-                    <li><a href="">Descargas</a></li>
-                    <li><a href="">Blog</a></li>
-                  </ul>
-                </nav>
-                <!--header__nav-->
-              </header>
-              <!--header-->
-              <main class="main">
-                <div class="main__container">
-                  <div class="main__title flex-box">
-                    <h1>Solicita tu prestamo</h1>
-                  </div>
-                  <!--main__title-->
-                  <div class="main__content">
-                    <div class="content__header flex-box">
-                      <div class="header__element flex-box active">
-                        <div class="element__number">1</div>
-                        <div class="element__name flex-box">
-                          <span>Information personal</span>
-                        </div>
-                      </div>
-                      <div class="header__element flex-box">
-                        <div class="element__number">2</div>
-                        <div class="element__name flex-box">
-                          <span>Information financiera</span>
-                        </div>
-                      </div>
-                      <div class="header__element flex-box">
-                        <div class="element__number">3</div>
-                        <div class="element__name flex-box">
-                          <span>Information extra</span>
-                        </div>
-                      </div>
-                    </div>
-                    <!--content__header-->
-                    <div class="sections-container flex-box" v-bind:style = "model.shop_model.section_style">
-                      <div class="content__container content__container1" >
-                        <div class="content__body">
-                          <div class="body__header flex-box">
-                            <div class="header__text">
-                              <span>Datos personales</span>
-                            </div>
-                            <hr class="header__line"></hr>
-                          </div>
-                          <!--body__header-->
-                          <div class="body__main flex-box">
-                              <div class="form__container">
-                                <form action="/" class="body-form flex-box">
+      </div>
 
-                                  <div v-for = "item in model.shop_model.form_item_arr" >
+      <div id="browser-main">
 
+        <div class="browser-page" v-if="model.active_page_name === 'shop'">
 
-                                        <div v-if = "item.type ==='text'" class="form__element flex-box date">
-                                     
-                                           <span>Correo electorico</span>
-                                        
-                                          <div class="textInput flex-box">
-                                            <div class="text-style"></div>
-                                            <div class="text-style"></div>
-                                            <div class="text-style"></div>
-                                            <div class="text-style"></div>
-                                            <div class="text-style"></div>
-                                          </div>
-
-                                        </div>
-
-                                        <div v-if = "item.type ==='date'" class="form__element flex-box date">
-                                          <span>Fecha de nacimiento</span>
-                                          <div class="textInput flex-box date-input">
-                                          <i class="material-icons material-date">event</i>
-                                          </div>
-                                          <div class="date-block">
-                                            <div class="date-block__header">
-                                              <div></div>
-                                              <div></div>
-                                            </div>
-                                            <div class="date-block__body flex-box">
-                                              <div></div>
-                                              <div></div>
-                                              <div></div>
-                                              <div></div>
-                                              <div></div>
-                                              <div class="chosen-date"></div>
-                                              <div></div>
-                                              <div></div>
-                                              <div class="chosen-date"></div>
-                                              <div></div>
-                                              <div></div>
-                                              <div></div>
-                                              <div></div>
-                                              <div></div>
-                                              <div></div>
-                                              <div></div>
-                                              <div></div>
-                                              <div></div>
-                                              <div class="chosen-date"></div>
-                                              <div></div>
-                                              <div></div>
-                                            </div>
-                                          </div>
-                                        </div>
-
-
-                                        <div class="form__element flex-box" v-if = "item.type ==='toggle'" >
-
-
-                                          <div class="form__element flex-box">
-                                            <span>Genero</span>
-                                            <div class="radio__container flex-box">
-                                              <div class="radio__box flex-box">
-                                                <input name="gender" type="radio" id="radio-male">
-                                                <label for="radio-male">Mujer</label>
-                                              </div>
-                                              <div class="radio__box flex-box">
-                                                <input name="gender" type="radio" id="radio-female">
-                                                <label for="radio-female">Hombre</label>
-                                              </div>
-                                            </div>
-                                          </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </form>
-                              </div>
-                          </div>
-                          <!--body__main-->
-                          <div class="body__footer flex-box">
-                            <button class="btn-continue">Continuar</button>
-                          </div>
-                        </div>
-                      <!--content__body-->
-                      </div>
-                      <!--content__container1-->
-                      <div class="content__container content__container2 flex-box">
-                        <div class="container2-slider flex-box">
-                          <button class="arrowLeft">
-                            <i class="material-icons">arrow_back</i>
-                          </button>
-                          <div class="slider-elementsContainer flex-box">
-                            <div class="slider-element flex-box">
-                              <picture>
-                                <img src="/img/toy-train.png" alt="">
-                              </picture>
-                              <div class="button-buy flex-box"><i class="material-icons">attach_money</i></div>
-                            </div>
-                            <div class="slider-element flex-box">
-                              <picture>
-                                <img src="/img/toy-train.png" alt="">
-                              </picture>
-                              <div class="button-buy flex-box"><i class="material-icons">attach_money</i></div>
-                            </div>
-                            <div class="slider-element flex-box">
-                              <picture>
-                                <img src="/img/toy-train.png" alt="">
-                              </picture>
-                              <div class="button-buy flex-box"><i class="material-icons">attach_money</i></div>
-                            </div>
-                          </div>
-                          <button class="arrowRight">
-                            <i class="material-icons">arrow_forward</i>
-                          </button>
-                        </div>
-                        <div class="container2-selectProduct flex-box">
-                          <div class="price-container flex-box" v-for="item in model.shop_model.price_selector_arr">
-                              <div class="setPrice">
-                                <p>31232</p>
-                              </div>
-                              <span> — </span>
-                              <div class="setPrice">
-                                <p>31232</p>
-                              </div>
-                              <div class="price-check">
-                                <div class="price-check__leftCircle price-circle"></div>
-                                <div class="price-check__rightCircle price-circle"></div>
-                              </div>
-                          </div>
-                    
-                        </div>
-                        <!--container2__selectProduct-->
-                        <div class="container2__selectFile">
-                          <input type="file" id="file">
-                          <label for="file" >Select file</label>
-                          <input type="file" id="file">
-                          <label for="file">Select file</label>
-                        </div>
-                      </div>
-                      <div class="content__container content__container3" >
-                        <div class="container3__header flex-box">
-                          <div class="header-left flex-box">
-                            <div class="img-container flex-box">
-                              <picture>
-                                <img src="/img/visa-logo-png-transparent.png">
-                              </picture>
-                              <picture>
-                                <img src="/img/Mastercard-logo.png">
-                              </picture>
-                            </div>
-                            <div class="text-container flex-box">
-                              <input type="radio" id="visa-pay">
-                              <label for="visa-pay">Pay 340.00$ with credit card</label>
-                            </div>
-                          </div>
-                          <div class="header-right">
-                            <div class="img-container flex-box">
-                              <picture>
-                                <img src="/img/PayPal.svg.png">
-                              </picture>
-  
-                            </div>
-                            <div class="text-container flex-box">
-                              <input type="radio" id="visa-pay">
-                              <label for="visa-pay">Pay 340.00$ with credit card</label>
-                            </div>
-                          </div>
-                          </div>
-                        <!--container3__header-->
-                        <div class="container3__main">
-                          <form action="/" class="container3-form flex-box">
-                            <div class="container3-form__element">
-                              <p>Cardholder's Name</p>
-                              <div class="textInput">
-                                <i class="material-icons">person</i>
-                              </div>
-                            </div>
-                            <div class="container3-form__element">
-                              <p>Card Name</p>
-                              <div class="textInput flex-box">
-                                <i class="material-icons">payment</i>
-                              </div>
-                            </div>
-                            <div class="container3-form__element">
-                              <p>Valid thru</p>
-                              <div class="textInput flex-box date-element">
-                                <i class="material-icons material-date">event</i>
-                              </div>
-                              <div class="date-block">
-                                <div class="date-block__header">
-                                  <div></div>
-                                  <div></div>
-                                </div>
-                                <div class="date-block__body flex-box">
-                                  <div></div>
-                                  <div></div>
-                                  <div></div>
-                                  <div></div>
-                                  <div></div>
-                                  <div class="chosen-date"></div>
-                                  <div></div>
-                                  <div></div>
-                                  <div class="chosen-date"></div>
-                                  <div></div>
-                                  <div></div>
-                                  <div></div>
-                                  <div></div>
-                                  <div></div>
-                                  <div></div>
-                                  <div></div>
-                                  <div></div>
-                                  <div></div>
-                                  <div class="chosen-date"></div>
-                                  <div></div>
-                                  <div></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="container3-form__element">
-                              <p>CVV / CVC *</p>
-                              <div class="textInput">
-                                <i class="material-icons">lock</i>
-                              </div>
-                            </div>
-                            <div class="container3-form__element">
-          
-                            </div>
-                          </form>
-                        </div>
-                        </div>
-                        <!--container3__main-->
-                    </div>
-            
-                    </div>
-                    <!--content__container3-->
-                  </div>
-                  <!--main__content-->
-                </div>
-                <!--main__container-->
-              </main>
-              <!--main-->
-              <footer></footer>
-              <div id = "chromane_iframe_container" class = "not-active" >
-
-                <div id = "chromane_iframe_toggle_button" >
-  
-                  <svg class = "chromane_chevron_left" style="width:24px;height:24px" viewBox="0 0 24 24">
-                    <path fill="white" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
-                  </svg>
-  
-                  <svg class = "chromane_chevron_right" style="width:24px;height:24px" viewBox="0 0 24 24">
-                    <path fill="white" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                  </svg>
-  
-                </div>
-  
-                <div id = "chromane_iframe" >
-                  <div id = "header" >
-  
-                    <div class="icon menu" style="margin-left: 17px" v-on:click="handle_event( 'menu_button_click' )">
-                      <svg viewBox="0 0 24 24">
-                        <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
-                      </svg>
-                    </div>
-  
-                    <div style="flex-grow: 1"></div>
-  
-                    <span>Horse Betting</span>
-  
-                    <div style="flex-grow: 1"></div>
-  
-                    <div class="icon close" style="margin-right: 15px; margin-left: 2px;" v-on:click="handle_event( 'close_button_click' )">
-                      <svg viewBox="0 0 24 24">
-                        <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
-                      </svg>
-                    </div>
-  
-                    <div id = "dropshadow" ></div>
-  
-                  </div>
-                </div>
-  
+          <div class="pageContainer">
+            <header class="header flex-box">
+              <div class="header__logo flex-box">
+                <span>MyCash</span>
               </div>
+              <!--header__logo-->
+              <nav class="header__nav flex-box">
+                <ul class="header__menu flex-box">
+                  <li><a href="">Inicio</a></li>
+                  <li><a href="">Come funciona</a></li>
+                  <li><a href="">Prestamos</a></li>
+                  <li><a href="">Preguntas Frequentes</a></li>
+                  <li><a href="">Descargas</a></li>
+                  <li><a href="">Blog</a></li>
+                </ul>
+              </nav>
+              <!--header__nav-->
+            </header>
+            <!--header-->
+            <main class="main">
+              <div class="main__container">
+                <div class="main__title flex-box">
+                  <h1>Solicita tu prestamo</h1>
+                </div>
+                <!--main__title-->
+                <div class="main__content">
+                  <div class="content__header flex-box">
+                    <div class="header__element flex-box active">
+                      <div class="element__number">1</div>
+                      <div class="element__name flex-box">
+                        <span>Information personal</span>
+                      </div>
+                    </div>
+                    <div class="header__element flex-box">
+                      <div class="element__number">2</div>
+                      <div class="element__name flex-box">
+                        <span>Information financiera</span>
+                      </div>
+                    </div>
+                    <div class="header__element flex-box">
+                      <div class="element__number">3</div>
+                      <div class="element__name flex-box">
+                        <span>Information extra</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!--content__header-->
+                  <div class="sections-container flex-box" v-bind:style="model.shop_model.section_style">
+                    <div class="content__container content__container1">
+                      <div class="content__body">
+                        <div class="body__header flex-box">
+                          <div class="header__text">
+                            <span>Datos personales</span>
+                          </div>
+                          <hr class="header__line">
+                          </hr>
+                        </div>
+                        <!--body__header-->
+                        <div class="body__main flex-box">
+                          <div class="form__container">
+                            <form action="/" class="body-form flex-box">
+
+                              <div v-for="item in model.shop_model.form_item_arr">
+
+
+                                <div v-if="item.type ==='text'" class="form__element flex-box date">
+
+                                  <span>Correo electorico</span>
+
+                                  <div class="textInput flex-box">
+                                    <div class="text-style"></div>
+                                    <div class="text-style"></div>
+                                    <div class="text-style"></div>
+                                    <div class="text-style"></div>
+                                    <div class="text-style"></div>
+                                  </div>
+
+                                </div>
+
+                                <div v-if="item.type ==='date'" class="form__element flex-box date">
+                                  <span>Fecha de nacimiento</span>
+                                  <div class="textInput flex-box date-input">
+                                    <i class="material-icons material-date">event</i>
+                                  </div>
+                                  <div class="date-block">
+                                    <div class="date-block__header">
+                                      <div></div>
+                                      <div></div>
+                                    </div>
+                                    <div class="date-block__body flex-box">
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div class="chosen-date"></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div class="chosen-date"></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div></div>
+                                      <div class="chosen-date"></div>
+                                      <div></div>
+                                      <div></div>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+                                <div class="form__element flex-box" v-if="item.type ==='toggle'">
+
+
+                                  <div class="form__element flex-box">
+                                    <span>Genero</span>
+                                    <div class="radio__container flex-box">
+                                      <div class="radio__box flex-box">
+                                        <input name="gender" type="radio" id="radio-male">
+                                        <label for="radio-male">Mujer</label>
+                                      </div>
+                                      <div class="radio__box flex-box">
+                                        <input name="gender" type="radio" id="radio-female">
+                                        <label for="radio-female">Hombre</label>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+
+                            </form>
+                          </div>
+                        </div>
+                        <!--body__main-->
+                        <div class="body__footer flex-box">
+                          <button class="btn-continue">Continuar</button>
+                        </div>
+                      </div>
+                      <!--content__body-->
+                    </div>
+                    <!--content__container1-->
+                    <div class="content__container content__container2 flex-box">
+                      <div class="container2-slider flex-box">
+                        <button class="arrowLeft">
+                          <i class="material-icons">arrow_back</i>
+                        </button>
+                        <div class="slider-elementsContainer flex-box">
+                          <div class="slider-element flex-box">
+                            <picture>
+                              <img src="/img/toy-train.png" alt="">
+                            </picture>
+                            <div class="button-buy flex-box"><i class="material-icons">attach_money</i></div>
+                          </div>
+                          <div class="slider-element flex-box">
+                            <picture>
+                              <img src="/img/toy-train.png" alt="">
+                            </picture>
+                            <div class="button-buy flex-box"><i class="material-icons">attach_money</i></div>
+                          </div>
+                          <div class="slider-element flex-box">
+                            <picture>
+                              <img src="/img/toy-train.png" alt="">
+                            </picture>
+                            <div class="button-buy flex-box"><i class="material-icons">attach_money</i></div>
+                          </div>
+                        </div>
+                        <button class="arrowRight">
+                          <i class="material-icons">arrow_forward</i>
+                        </button>
+                      </div>
+                      <div class="container2-selectProduct flex-box">
+                        <div class="price-container flex-box" v-for="item in model.shop_model.price_selector_arr">
+                          <div class="setPrice">
+                            <p>31232</p>
+                          </div>
+                          <span> — </span>
+                          <div class="setPrice">
+                            <p>31232</p>
+                          </div>
+                          <div class="price-check">
+                            <div class="price-check__leftCircle price-circle"></div>
+                            <div class="price-check__rightCircle price-circle"></div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <!--container2__selectProduct-->
+                      <div class="container2__selectFile">
+                        <input type="file" id="file">
+                        <label for="file">Select file</label>
+                        <input type="file" id="file">
+                        <label for="file">Select file</label>
+                      </div>
+                    </div>
+                    <div class="content__container content__container3">
+                      <div class="container3__header flex-box">
+                        <div class="header-left flex-box">
+                          <div class="img-container flex-box">
+                            <picture>
+                              <img src="/img/visa-logo-png-transparent.png">
+                            </picture>
+                            <picture>
+                              <img src="/img/Mastercard-logo.png">
+                            </picture>
+                          </div>
+                          <div class="text-container flex-box">
+                            <input type="radio" id="visa-pay">
+                            <label for="visa-pay">Pay 340.00$ with credit card</label>
+                          </div>
+                        </div>
+                        <div class="header-right">
+                          <div class="img-container flex-box">
+                            <picture>
+                              <img src="/img/PayPal.svg.png">
+                            </picture>
+
+                          </div>
+                          <div class="text-container flex-box">
+                            <input type="radio" id="visa-pay">
+                            <label for="visa-pay">Pay 340.00$ with credit card</label>
+                          </div>
+                        </div>
+                      </div>
+                      <!--container3__header-->
+                      <div class="container3__main">
+                        <form action="/" class="container3-form flex-box">
+                          <div class="container3-form__element">
+                            <p>Cardholder's Name</p>
+                            <div class="textInput">
+                              <i class="material-icons">person</i>
+                            </div>
+                          </div>
+                          <div class="container3-form__element">
+                            <p>Card Name</p>
+                            <div class="textInput flex-box">
+                              <i class="material-icons">payment</i>
+                            </div>
+                          </div>
+                          <div class="container3-form__element">
+                            <p>Valid thru</p>
+                            <div class="textInput flex-box date-element">
+                              <i class="material-icons material-date">event</i>
+                            </div>
+                            <div class="date-block">
+                              <div class="date-block__header">
+                                <div></div>
+                                <div></div>
+                              </div>
+                              <div class="date-block__body flex-box">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div class="chosen-date"></div>
+                                <div></div>
+                                <div></div>
+                                <div class="chosen-date"></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div class="chosen-date"></div>
+                                <div></div>
+                                <div></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="container3-form__element">
+                            <p>CVV / CVC *</p>
+                            <div class="textInput">
+                              <i class="material-icons">lock</i>
+                            </div>
+                          </div>
+                          <div class="container3-form__element">
+
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <!--container3__main-->
+                  </div>
+
+                </div>
+                <!--content__container3-->
+              </div>
+              <!--main__content-->
           </div>
+          <!--main__container-->
+          </main>
+          <!--main-->
+          <footer></footer>
+          <div id="chromane_iframe_container" class="not-active">
 
-          <div class = "browser-page" v-if = "model.active_page_name === 'database'" >
+            <div id="chromane_iframe_toggle_button">
 
-            <div class="pageContainer table-page">
-              <div class="table-page__container">
-                <header class="table-page__header flex-box">
-                  <div class="header__logo flex-box">
-                    <i class="material-icons">explore</i>
-                  </div>
-                  <div class="header__search flex-box">
-                    <i class="material-icons">search</i>
-                    <p>Search</p>
-                  </div>
-                </header>
+              <svg class="chromane_chevron_left" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="white" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
+              </svg>
+
+              <svg class="chromane_chevron_right" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="white" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+              </svg>
+
+            </div>
+
+            <div id="chromane_iframe">
+              <div id="header">
+
+                <div class="icon menu" style="margin-left: 17px" v-on:click="handle_event( 'menu_button_click' )">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                  </svg>
+                </div>
+
+                <div style="flex-grow: 1"></div>
+
+                <span>Horse Betting</span>
+
+                <div style="flex-grow: 1"></div>
+
+                <div class="icon close" style="margin-right: 15px; margin-left: 2px;"
+                  v-on:click="handle_event( 'close_button_click' )">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                  </svg>
+                </div>
+
+                <div id="dropshadow"></div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="browser-page" v-if="model.active_page_name === 'database'">
+
+          <div class="pageContainer table-page">
+            <div class="table-page__container flex-box">
+              <header class="table-page__header flex-box">
+                <div class="header__logo flex-box">
+                  <i class="material-icons">explore</i>
+                </div>
+                <div class="header__search flex-box">
+                  <i class="material-icons">search</i>
+                  <p>Search</p>
+                </div>
+              </header>
+              <main class="table-page__main flex-box">
                 <aside class="table-page__aside">
                   <nav class="aside__nav">
                     <ul class="flex-box">
-                      <li><i class="material-icons">house</i></li>
-                      <li><i class="material-icons">local_grocery_store_outlined_icon</i></li>
-                      <li><i class="material-icons">keyboard</i></li>
-                      <li><i class="material-icons">person</i></li>
-                      <li><i class="material-icons">trending_up</i></li>
-                      <li><i class="material-icons">notifications_active_icon</i></li>
+                      <li v-for="item in model.shop_model.aside_nav_arr">
+                        <i class="material-icons" v-bind:style="{color : item.color}">{{item.text}}</i>
+                      </li>
                     </ul>
                   </nav>
                 </aside>
-                <main class="table-page__main"></main>
-              </div>
-         
-              <div id = "chromane_iframe_container" class = "not-active" >
-  
-                <div id = "chromane_iframe_toggle_button" >
-  
-                  <svg class = "chromane_chevron_left" style="width:24px;height:24px" viewBox="0 0 24 24">
-                    <path fill="white" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
-                  </svg>
-  
-                  <svg class = "chromane_chevron_right" style="width:24px;height:24px" viewBox="0 0 24 24">
-                    <path fill="white" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                  </svg>
-  
-                </div>
-  
-                <div id = "chromane_iframe" >
-                  <div id = "header" >
-  
-                    <div class="icon menu" style="margin-left: 17px" v-on:click="handle_event( 'menu_button_click' )">
-                      <svg viewBox="0 0 24 24">
-                        <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
-                      </svg>
-                    </div>
-  
-                    <div style="flex-grow: 1"></div>
-  
-                    <span>Horse Betting</span>
-  
-                    <div style="flex-grow: 1"></div>
-  
-                    <div class="icon close" style="margin-right: 15px; margin-left: 2px;" v-on:click="handle_event( 'close_button_click' )">
-                      <svg viewBox="0 0 24 24">
-                        <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
-                      </svg>
-                    </div>
-  
-                    <div id = "dropshadow" ></div>
-  
+                <div class="table-container">
+                  <div class="table-container__header flex-box">
+                    <h1>Orders</h1>
+                    <div class="btn-order"><p>Create orders</p></div>
                   </div>
+                  <div class="table-container__main">
+                    <div class="table">
+                      <div class="table-head flex-box">
+                        <div><p>All</p></div>
+                        <div><p>Open</p></div>
+                        <div><p>Unfulfilled</p></div>
+                        <div><p>Unpaid</p></div>
+                      </div>
+                      <div class="table-body">
+                        <div class="table-search__container">
+                          <div class="table-search flex-box">
+                            <i class="material-icons">search</i>
+                            <p>Search orders</p>
+                          </div>
+                        </div>
+                        <div class="table-rows__container">
+                          <div class="table-row flex-box" v-for="item in model.shop_model.table_rows_quantity">
+                            <div class="table-checkbox"></div>
+                            <div class="table-text"><p>Order</p></div>
+                            <div class="table-text"><p>Date</p></div>
+                            <div class="table-text"><p>Customer</p></div>
+                            <div class="table-text"><p>Payment Status</p></div>
+                            <div class="table-text"><p>Payment Status</p></div>
+                            <div class="table-text"><p>Payment Status</p></div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
-  
-              </div>
+              </main>
             </div>
-  
-          </div>
-  
+
+            <div id="chromane_iframe_container" class="not-active">
+
+              <div id="chromane_iframe_toggle_button">
+
+                <svg class="chromane_chevron_left" style="width:24px;height:24px" viewBox="0 0 24 24">
+                  <path fill="white" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
+                </svg>
+
+                <svg class="chromane_chevron_right" style="width:24px;height:24px" viewBox="0 0 24 24">
+                  <path fill="white" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                </svg>
+
+              </div>
+
+              <div id="chromane_iframe">
+                <div id="header">
+
+                  <div class="icon menu" style="margin-left: 17px" v-on:click="handle_event( 'menu_button_click' )">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                    </svg>
+                  </div>
+
+                  <div style="flex-grow: 1"></div>
+
+                  <span>Horse Betting</span>
+
+                  <div style="flex-grow: 1"></div>
+
+                  <div class="icon close" style="margin-right: 15px; margin-left: 2px;"
+                    v-on:click="handle_event( 'close_button_click' )">
+                    <svg viewBox="0 0 24 24">
+                      <path
+                        d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                    </svg>
+                  </div>
+
+                  <div id="dropshadow"></div>
+
+                </div>
+              </div>
+
+            </div>
           </div>
 
         </div>
@@ -513,13 +551,18 @@
     </div>
 
   </div>
-  
-      <div class = "mouse_container">
-        <img src= "img/mouse-pointer.svg">
-      </div>
 
-      <script src = "js/vue.min.js" ></script>
-      <script src = "js/main.js" ></script>
+  </div>
 
-  </body>
+  </div>
+
+  <div class="mouse_container">
+    <img src="img/mouse-pointer.svg">
+  </div>
+
+  <script src="js/vue.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
 </html>
