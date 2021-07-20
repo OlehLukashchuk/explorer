@@ -549,8 +549,65 @@
               </div>
 
             </div>
+            <div class="wrapper">
+              <div class="product-info">
+                <div class="wine-info">
+                  <div class="product-info__header flex-box">
+                    <div class="header-text flex-box">
+                      <span>10001</span>
+                      <span>-</span>
+                      <p>Product Name</p>
+                    </div>
+                    <button>X</button>
+                  </div>
+                  <div class="product-info__main flex-box">
+                    <div class="main-left">
+                      <div class="left-elementInfo flex-box" v-for="item in model.shop_model.wine_info_arr">
+                        <p>{{item.category}}</p>
+                        <p>{{item.text}}</p>
+                      </div>
+                    </div>
+                    <div class="main-right">
+                      <picture>
+                        <img src="/img/wine_speedlights_kit_lens.jpg.optimal.jpg" alt="product-image">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="cheese-info">
+                  <div class="product-info__main flex-box">
+                    <div class="main-left">
+                      <div class="left-elementInfo flex-box" v-for="item in model.shop_model.cheese_info_arr">
+                        <p>{{item.category}}</p>
+                        <p>{{item.text}}</p>
+                      </div>
+                    </div>
+                    <div class="main-right">
+                      <picture>
+                        <img src="/img/healthiest-cheese-1296x728-swiss.jpg" alt="product-image">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-info">
+                  <div class="product-info__main flex-box">
+                    <div class="main-left">
+                      <div class="left-elementInfo flex-box" v-for="item in model.shop_model.cheese_info_arr">
+                        <p>{{item.category}}</p>
+                        <p>{{item.text}}</p>
+                      </div>
+                    </div>
+                    <div class="main-right">
+                      <picture>
+                        <img src="/img/user.png" alt="user-image">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
           </div>
-
+        </div>
         </div>
 
       </div>

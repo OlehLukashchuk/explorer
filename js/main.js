@@ -5,14 +5,14 @@ var _state = {
 
 _state.operation_state = {};
 _state.model = {
-  // active_page_name: "shop",
-  active_page_name: "database",
+  active_page_name: "shop",
+  // active_page_name: "database",
 
   shop_model: {
     section_style: {
       left: "0%",
     },
-    section_index: 2,
+    section_index: 0,
 
     form_item_arr: [
       {
@@ -54,101 +54,159 @@ _state.model = {
         index: 2,
       },
     ],
-    aside_nav_arr:[
+    aside_nav_arr: [
       {
-        text: 'house',
+        text: "house",
       },
       {
-        text: 'local_grocery_store_outlined_icon',
-        color : '#0cd493'
+        text: "local_grocery_store_outlined_icon",
+        color: "#0cd493",
       },
       {
-        text: 'keyboard',
+        text: "keyboard",
       },
       {
-        text: 'person',
+        text: "person",
       },
       {
-        text: 'trending_up',
+        text: "trending_up",
       },
       {
-        text: 'notifications_active_icon',
+        text: "notifications_active_icon",
       },
     ],
     table_rows_quantity: [
       {
-        index:0,
-        order:'#10001',
-        date : 'Oct 6, 7:27 pm',
-        customer: 'John Crichton',
-        paymentStatus : 'Paid',
-        fulfillStatus : 'Fulfilled' 
+        index: 0,
+        order: "#10001",
+        date: "Oct 6, 7:27 pm",
+        customer: "John Crichton",
+        paymentStatus: "Paid",
+        fulfillStatus: "Fulfilled",
       },
       {
-        index:1,
-        order:'#10002',
-        date : 'Oct 6, 7:27 pm',
-        customer: 'Cameron Mitchell',
-        paymentStatus : 'Paid',
-        fulfillStatus : 'Fulfilled' 
+        index: 1,
+        order: "#10002",
+        date: "Oct 6, 7:27 pm",
+        customer: "Cameron Mitchell",
+        paymentStatus: "Paid",
+        fulfillStatus: "Fulfilled",
       },
       {
-        index:2,
-        order:'#10003',
-        date : 'Oct 6, 7:27 pm',
-        customer: 'Jack Beaver',
-        paymentStatus : 'Paid',
-        fulfillStatus : 'Fulfilled'
+        index: 2,
+        order: "#10003",
+        date: "Oct 6, 7:27 pm",
+        customer: "Jack Beaver",
+        paymentStatus: "Paid",
+        fulfillStatus: "Fulfilled",
       },
       {
-        index:3,
-        order:'#10004',
-        date : 'Oct 6, 7:27 pm',
-        customer: 'Jon Snow',
-        paymentStatus : 'Paid',
-        fulfillStatus : 'Fulfilled' 
+        index: 3,
+        order: "#10004",
+        date: "Oct 6, 7:27 pm",
+        customer: "Jon Snow",
+        paymentStatus: "Paid",
+        fulfillStatus: "Fulfilled",
       },
       {
-        index:4,
-        order:'#10005',
-        date : 'Oct 6, 7:27 pm',
-        customer: 'John Crichton',
-        paymentStatus : 'Paid',
-        fulfillStatus : 'Fulfilled' 
+        index: 4,
+        order: "#10005",
+        date: "Oct 6, 7:27 pm",
+        customer: "John Crichton",
+        paymentStatus: "Paid",
+        fulfillStatus: "Fulfilled",
       },
       {
-        index:5,
-        order:'#10006',
-        date : 'Oct 6, 7:27 pm',
-        customer: 'Jon Snow',
-        paymentStatus : 'Paid',
-        fulfillStatus : 'Fulfilled' 
+        index: 5,
+        order: "#10006",
+        date: "Oct 6, 7:27 pm",
+        customer: "Jon Snow",
+        paymentStatus: "Paid",
+        fulfillStatus: "Fulfilled",
       },
       {
-        index:6,
-        order:'#10007',
-        date : 'Oct 6, 7:27 pm',
-        customer: 'Cameron Mitchell',
-        paymentStatus : 'Paid',
-        fulfillStatus : 'Fulfilled' 
+        index: 6,
+        order: "#10007",
+        date: "Oct 6, 7:27 pm",
+        customer: "Cameron Mitchell",
+        paymentStatus: "Paid",
+        fulfillStatus: "Fulfilled",
       },
       {
-        index:7,
-        order:'#10008',
-        date : 'Oct 6, 7:27 pm',
-        customer: 'Jack Beaver',
-        paymentStatus : 'Paid',
-        fulfillStatus : 'Fulfilled'
+        index: 7,
+        order: "#10008",
+        date: "Oct 6, 7:27 pm",
+        customer: "Jack Beaver",
+        paymentStatus: "Paid",
+        fulfillStatus: "Fulfilled",
       },
       {
-        index:8,
-        order:'#10009',
-        date : 'Oct 6, 7:27 pm',
-        customer: 'Jon Snow',
-        paymentStatus : 'Paid',
-        fulfillStatus : 'Fulfilled' 
+        index: 8,
+        order: "#10009",
+        date: "Oct 6, 7:27 pm",
+        customer: "Jon Snow",
+        paymentStatus: "Paid",
+        fulfillStatus: "Fulfilled",
       },
-    ]
+    ],
+    wine_info_arr: [
+      {
+        category: "Name",
+        text: "Cuvee La Rossa",
+      },
+      {
+        category: "ABV",
+        text: "11%",
+      },
+      {
+        category: "Calories",
+        text: "75g",
+      },
+      {
+        category: "Sugars",
+        text: "0g",
+      },
+      {
+        category: "Price",
+        text: "11.99$",
+      },
+    ],
+    cheese_info_arr: [
+      {
+        category: "Name",
+        text: "Gorgonzola",
+      },
+      {
+        category: "Milk type",
+        text: "Cow",
+      },
+      {
+        category: "Region",
+        text: "Italy",
+      },
+      {
+        category: "Calories",
+        text: "100g",
+      },
+      {
+        category: "Price",
+        text: "9.99$",
+      },
+    ],
+    cheese_info_arr: [
+      {
+        category: "Name",
+        text: "Andrew",
+      },
+      {
+        category: "Age",
+        text: "25",
+      },
+      {
+        category: "Address",
+        text: "Some street",
+      },
+    ],
   },
 };
 
