@@ -152,7 +152,7 @@ _state.model = {
     wine_info_arr: [
       {
         category: "Name",
-        text: "Cuvee La Rossa",
+        text: "Chianti",
       },
       {
         category: "ABV",
@@ -207,6 +207,55 @@ _state.model = {
         text: "Some street",
       },
     ],
+    wine_type_arr: [
+      {
+        name : 'Lambrusco'
+      },
+      {
+        name : 'Chianti'
+      },
+      {
+        name : 'Brunello'
+      },
+      {
+        name : 'Amarone'
+      },
+      {
+        name : 'Pinot Grigio'
+      },
+      {
+        name : 'Pinot Grigio'
+      },
+      {
+        name : 'Pinot Grigio'
+      },
+    ],
+    wine_element_arr: [
+      {
+        name : 'Chianti',
+        price : '$ 4.99'
+      },
+      {
+        name : 'Chianti',
+        price : '$ 4.99'
+      },
+      {
+        name : 'Chianti',
+        price : '$ 4.99'
+      },
+      {
+        name : 'Chianti',
+        price : '$ 4.99'
+      },
+      {
+        name : 'Chianti',
+        price : '$ 4.99'
+      },
+      {
+        name : 'Chianti',
+        price : '$ 4.99'
+      },
+    ]
   },
 };
 

@@ -87,7 +87,7 @@
 
         <div class="browser-page" v-if="model.active_page_name === 'shop'">
 
-          <div class="pageContainer">
+          <div class="pageContainer flex-box">
             <header class="header flex-box">
               <div class="header__logo flex-box">
                 <span>MyCash</span>
@@ -106,14 +106,11 @@
               <!--header__nav-->
             </header>
             <!--header-->
-            <main class="main">
+            <main class="main flex-box">
               <div class="main__container">
-                <div class="main__title flex-box">
-                  <h1>Solicita tu prestamo</h1>
-                </div>
                 <!--main__title-->
                 <div class="main__content">
-                  <div class="content__header flex-box">
+                  <!-- <div class="content__header flex-box">
                     <div class="header__element flex-box active">
                       <div class="element__number">1</div>
                       <div class="element__name flex-box">
@@ -132,21 +129,49 @@
                         <span>Information extra</span>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                   <!--content__header-->
                   <div class="sections-container flex-box" v-bind:style="model.shop_model.section_style">
                     <div class="content__container content__container1">
                       <div class="content__body">
-                        <div class="body__header flex-box">
-                          <div class="header__text">
+                        <div class="body__header ">
+                          <!-- <div class="header__text">
                             <span>Datos personales</span>
                           </div>
                           <hr class="header__line">
-                          </hr>
+                          </hr> -->
+                          <div class="header__search flex-box">
+                            <i class="material-icons">search</i>
+                            <p>Search...</p>
+                          </div>
                         </div>
-                        <!--body__header-->
                         <div class="body__main flex-box">
-                          <div class="form__container">
+                          <div class="body__main-aside flex-box">
+                            <div class="aside-header">
+                              <div class="aside-search flex-box">
+                                <p>Search...</p>
+                              </div>
+                            </div>
+                            <div class="aside-main">
+                              <div class="check-wine flex-box" v-for="item in model.shop_model.wine_type_arr">
+                                <div class="wine-checkbox"></div>
+                                <p>{{item.name}}</p>
+                              </div>
+                            </div>
+                            <div class="aside-footer"></div>
+                          </div>
+                          <div class="body__main-content flex-box">
+                            <div class="product__element flex-box" v-for="item in model.shop_model.wine_element_arr">
+                              <picture>
+                                <img src="/img/wine.jpg" alt="">
+                              </picture>
+                              <div class="element-name">Chianti</div>
+                              <div class="element-price">$4.99</div>
+                              <button class="btn-buyProduct">Buy</button>
+                            </div>
+  
+                          </div>
+                          <!-- <div class="form__container">
                             <form action="/" class="body-form flex-box">
 
                               <div v-for="item in model.shop_model.form_item_arr">
@@ -225,14 +250,12 @@
                               </div>
 
                             </form>
-                          </div>
+                          </div> -->
                         </div>
-                        <!--body__main-->
-                        <div class="body__footer flex-box">
+                        <!-- <div class="body__footer flex-box">
                           <button class="btn-continue">Continuar</button>
-                        </div>
+                        </div> -->
                       </div>
-                      <!--content__body-->
                     </div>
                     <!--content__container1-->
                     <div class="content__container content__container2 flex-box">
